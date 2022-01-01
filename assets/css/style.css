@@ -1,3 +1,29 @@
 body {
-    background-color: lightblue;
+  background-color: lightblue;  
+}
+
+/*basic css to test javascript on making the moles peek out of the holes*/
+
+.game {
+    background-color: red;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    
+
+    
+}
+.hole {
+    width: 200px;
+    height: 100px;
+    background: url("../images/hole-image.jpg") center no-repeat;
+    background-size: contain;
+    flex: 1 0 30%;
+    z-index: 5;
+    
+    
+    
+
 }
