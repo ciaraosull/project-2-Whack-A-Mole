@@ -4,18 +4,21 @@
 //event listener added to buttons elements - code to be executed when user clicks buttons
 
 
-//function randomHoles to get random DOM element of “holes”. Then to generate a random number (0-2) of the 3 holes (holes.lenght) the moles peek out of each time//
+//function randomHoles to get random DOM element of “holes”. 
+//Then to generate a random number (0-2) of the 3 holes (holes.lenght) the moles peek out of each time.
 
-//try not make global variables - test only
+let hole = document.getElementsByClassName("hole"); //try not make global variables - test only
 
-let hole = document.getElementsByClassName("hole");
-
-console.log(hole.length);
+console.log(hole.length); //3
 
 let randomHole = Math.floor(Math.random() * hole.length);
-console.log(randomHole);
+console.log(randomHole); //random number between 0-3
 
-
+//function randomHole(holes) {
+//    let x = Math.floor(Math.random() * hole.length);
+//    let hole = holes[x];
+//    return hole;
+//   }
 
  
 
