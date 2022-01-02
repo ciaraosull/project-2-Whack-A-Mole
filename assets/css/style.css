@@ -5,7 +5,7 @@ body {
   padding: 0;
 }
 
-/*basic css to test to make moles in holes using :after for responsive square divs*/
+/* draft css to test to make moles in holes using :after for responsive square divs*/
 
 .game-container {
     display:flex;
@@ -18,9 +18,11 @@ body {
 .hole {
     position: relative;
     width: 30%;
-    overflow: hidden;
+    overflow: hidden; /*hides moles*/
   }
   
+  /* To make this div a perfect responsive square the :after pseudo-element was used.  
+  By adding an empty :after element to .square and set padding-bottom: 100%:*/
   .hole:after {
     content: "";
     display: block;
@@ -29,13 +31,15 @@ body {
   }
   
   .mole {
-    position: absolute;
+    position: absolute; /* Use absolute so its content will not affect the dimensions of the hole square*/
     width: 50%;
     height: 50%;
     background-color: green;
+    /*Because position:absolute was used, then to center this pos left and neg margin left was used*/
     left: 50%;
     margin-left: -25%;
     bottom: 0;
+    /*to move the mole div under the hole div and this will be reset with js to have the mole peek up*/
     top: 100%;
   }
 
