@@ -2,40 +2,27 @@ body {
   background-color: lightblue;  
 }
 
-/*basic css to test javascript on making the moles peek out of the holes
-
-Mixed up moles and holes in html so need to change html class selector names next time*/
-
-.game {
-    background-color: red;
-    width: 100%;
-    height: 400px ;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-around;
-}
+/*basic css to test to make moles in holes using :after for responsive square divs*/
 
 .hole {
-    width: 200px;
-    height: 100px;
-    background: url("../images/mole-image.jpg") center no-repeat;
-    background-size: contain;
-    flex: 1 0 30%;
     position: relative;
-    padding-bottom: 20px;
-}
-
-.mole {
-    width: 100%;
-    height: 100%;
-    background: url("../images/hole-image.jpg") center no-repeat;
+    width: 50%;
+    
+  }
+  
+  .hole:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+    background-color: red;
+  }
+  
+  .mole {
     position: absolute;
-    background-size: contain;
-    overflow: hidden;
-    padding-bottom: 100px;
-}
+    width: 50%;
+    height: 50%;
+    background-color: green;
+  }
 
-.hole.up .mole {
-    background-image: none; 
-}
+
 
