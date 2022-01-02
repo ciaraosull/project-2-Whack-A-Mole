@@ -43,5 +43,6 @@ body {
     /*top: 100%;
   }
 
-
-
+.hole.up .mole {
+top: 0;
+}

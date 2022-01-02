@@ -23,11 +23,10 @@ console.log(randomHole); //random number between 0-3
  
 
 /**
- * function peek for getting moles to pop up out of hole 
+ * function peek for getting moles to pop up out of hole (in css .classList.add("up")) 
  * for certain amount of time and then disappear back
  * into hole (maybe make a random time each time this happens?)
  */
- 
  
 /**
  * function randomTimeBetweenPeek to calculate
