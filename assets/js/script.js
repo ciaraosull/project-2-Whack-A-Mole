@@ -7,12 +7,12 @@
 //function randomHoles to get random DOM element of “holes”. 
 //Then to generate a random number (0-2) of the 3 holes (holes.lenght) the moles peek out of each time.
 
-//let hole = document.getElementsByClassName("hole"); //try not make global variables - test only
+let hole = document.getElementsByClassName("hole"); //try not make global variables - test only
 
-//console.log(hole.length); //3
+console.log(hole.length); //3
 
-//let randomHole = Math.floor(Math.random() * hole.length);
-//console.log(randomHole); //random number between 0-3
+let randomHole = Math.floor(Math.random() * hole.length);
+console.log(randomHole); //random number between 0-3
 
 //function randomHole(holes) {
 //    let x = Math.floor(Math.random() * hole.length);
@@ -27,7 +27,7 @@
  */
 
 function randomTime(min, max) {
-    return Math.random() * (max - min) + min;
+    return Math.round(Math.random() * (max - min) + min);
 }
 
 console.log(randomTime(min, max));
