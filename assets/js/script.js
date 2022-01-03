@@ -55,14 +55,6 @@ function peek() {
 
 
 
-
-
-
-
-
-
-
-
 /**
  * function scoreboard to calculate the
  * score increasing on every successful hit of mole

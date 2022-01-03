@@ -39,6 +39,7 @@ body {
     left: 50%;
     margin-left: -25%;
     bottom: 0;
+    transition: 5s;
     top: 100%;
     /*to move the mole div under the hole div and this will be reset with js to have the mole peek up*/
 
@@ -46,4 +47,5 @@ body {
 
 .hole.up .mole {
 top: 0;
+
 }
