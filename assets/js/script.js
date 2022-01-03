@@ -9,16 +9,16 @@
 
 let hole = document.getElementsByClassName("hole"); //try not make global variables - test only
 
-console.log(hole.length); //3
+console.log(hole.length); //3 because 3 holes in node so far
 
-let randomHole = Math.floor(Math.random() * hole.length);
-console.log(randomHole); //random number between 0-3
+//let randomHole = Math.floor(Math.random() * hole.length);
+//console.log(randomHole); //random number between 0-3
 
-//function randomHole(holes) {
-//    let x = Math.floor(Math.random() * hole.length);
-//    let hole = holes[x];
-//    return hole;
-//   }
+function randomHole(hole) {
+    let x = Math.floor(Math.random() * hole.length);
+    let allHoles = hole[x];
+    console.log(allHoles);
+}
 
 /**
  * function randomTimeBetweenPeek to calculate
