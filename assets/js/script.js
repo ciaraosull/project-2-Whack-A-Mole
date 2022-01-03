@@ -1,7 +1,7 @@
 
-//event listener DOM load before running game- code to be executed when page has finished loading
+//Add event listener DOM load before running game- code to be executed when page has finished loading
 
-//event listener added to buttons elements - code to be executed when user clicks buttons
+//Add event listener added to buttons elements - code to be executed when user clicks buttons
 
 
 
@@ -17,7 +17,7 @@ let hole = document.getElementsByClassName("hole"); //try not make global variab
 //console.log(randomHole); //random number between 0-3
 
 function randomHole(hole) {
-    let x = Math.floor(Math.random() * hole.length);
+    let x = Math.floor(Math.random() * hole.length); // x stands for the random hole number 0-2
     let allHoles = hole[x];
 //  console.log(allHoles); //tested and random hole generated each time!
     return(allHoles);
@@ -29,17 +29,21 @@ function randomHole(hole) {
  * Used Math.round to keep the time as whole number?
  */
 
-function randomTime(min, max) {
+function randomTimeBetweenPeek(min, max) {
     return Math.round(Math.random() * (max - min) + min);
 }
-//console.log(randomTime(min, max)); //tested & random whole number generated each time!
+//console.log(randomTimeBetweenPeek(min, max)); //tested & random whole number generated each time!
 
 
 /**
- * function peek for getting moles to pop up out of hole (in css .classList.add("up")) 
+ * function peek for getting moles to pop up out of hole 
  * for certain amount of time and then disappear back
  * into hole (maybe make a random time each time this happens?)
  */
+
+//function myFunction() {document.getElementById("myDIV").classList.add("mystyle");} (W3schools ref)
+//for moles function peek() {document.getElementByClassName(.hole.up .mole).classList.add("up")}
+
 
 /**
  * function scoreboard to calculate the
