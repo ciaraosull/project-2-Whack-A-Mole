@@ -45,10 +45,14 @@ function peek() {
     let randomTime = randomTimeBetweenPeek(1000, 3000); //use the random time from above with 1-3 secs
     let randHole = randomHole(hole);
 //  console.log(randomTime, randHole); //log to console and random hole selected at random time between 1-3secs (yay!)
-}
 
 //add the moles peeking up function myFunction() {document.getElementById("myDIV").classList.add("mystyle");} (W3schools ref)
 //for moles function peek() {document.getElementByClassName(.hole.up .mole).classList.add("up")}
+
+    let randHole.classList.add(up)
+}
+
+
 
 
 /**
