@@ -9,7 +9,7 @@
 
 let hole = document.getElementsByClassName("hole"); //try not make global variables - test only
 
-console.log(hole.length); //3 because 3 holes in node so far
+//console.log(hole.length); //3 because 3 holes in node so far
 
 //let randomHole = Math.floor(Math.random() * hole.length);
 //console.log(randomHole); //random number between 0-3
