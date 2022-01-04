@@ -9,7 +9,7 @@ body {
 
 .game-container {
     display:flex;
-    background-color: yellow;
+    background-color: lightgreen;
     width: 100%;
     justify-content: space-evenly;
     flex-wrap: wrap;
