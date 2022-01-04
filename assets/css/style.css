@@ -18,7 +18,7 @@ body {
 .mole {
   position: absolute; /* Use absolute so its content will not affect the dimensions of the hole square*/
   width: 50%;
-  height: 50%;
+  height: 70%;
   background-color: green;
   /*Because position:absolute was used, then to center this pos left and neg margin left was used*/
   left: 50%;
@@ -43,8 +43,9 @@ body {
   .hole:after {
     content: "";
     display: block;
-    padding-bottom: 100%;
+    padding-bottom: 70%;
     background: url("../images/hole-image-cropped.jpg") bottom center no-repeat;
+    background-size: contain;
   }
   
   
