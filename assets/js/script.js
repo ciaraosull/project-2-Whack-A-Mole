@@ -7,17 +7,17 @@
 
 
 //function randomHoles to get random DOM element of “holes”. 
-//Then to generate a random number (0-2) of the 3 holes (holes.lenght) the moles peek out of each time.
+//Then to generate a random number (0-5) of the 6 holes (holes.lenght) the moles peek out of each time.
 
 let hole = document.getElementsByClassName("hole"); //try not make global variables - test only
 
-//console.log(hole.length); //3 because 3 holes in node so far
+//console.log(hole.length); //6 because 6 holes in node so far
 
 //let randomHole = Math.floor(Math.random() * hole.length);
-//console.log(randomHole); //random number between 0-3
+//console.log(randomHole); //random number between 0-5
 
 function randomHole(hole) {
-    let x = Math.floor(Math.random() * hole.length); // x stands for the random hole number 0-2
+    let x = Math.floor(Math.random() * hole.length); // x stands for the random hole number 0-5
     let allHoles = hole[x];
 //  console.log(allHoles); //tested and random hole generated each time!
     return(allHoles);
