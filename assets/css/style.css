@@ -27,7 +27,7 @@ body {
     content: "";
     display: block;
     padding-bottom: 100%;
-    background-color: red;
+    background: url("../images/hole-image.jpg") center no-repeat;
   }
   
   .mole {
