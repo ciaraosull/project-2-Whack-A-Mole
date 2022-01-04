@@ -24,7 +24,7 @@ body {
   left: 50%;
   margin-left: -25%;
   bottom: 0;
-  z-index: -2;
+  z-index: -2; /*reset stacking order so mole behind hole */
   transition: 2s;
   top: 100%;
   /*to move the mole div under the hole div and this will be reset with js to have the mole peek up*/
@@ -34,7 +34,7 @@ body {
 .hole {
     position: relative;
     width: 30%;
-    z-index: 2;
+    z-index: 2; /*reset stacking order so hole on top of mole */
     overflow: hidden; /*hides moles*/
   }
   
@@ -44,7 +44,7 @@ body {
     content: "";
     display: block;
     padding-bottom: 100%;
-    background: url("../images/hole-image-cropped.jpg") center no-repeat;
+    background: url("../images/hole-image-cropped.jpg") bottom center no-repeat;
   }
   
   
