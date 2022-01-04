@@ -5,6 +5,10 @@ body {
   padding: 0;
 }
 
+.backdrop-container {
+  position: relative;
+}
+
 /* draft css to test to make moles in holes using :after for responsive square divs*/
 
 
@@ -14,6 +18,8 @@ body {
     width: 100%;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    position: absolute;
+    top: 40%;
 }
 
 .mole {
