@@ -69,3 +69,16 @@
 .hole.up .mole {
   top: 0;
 }
+
+
+@media (min-width: 400px) {
+  .game-container {
+    width: 80%;
+  }
+}
+
+@media (min-width: 600px) {
+  .game-container {
+    width: 60%;
+  }
+}
