@@ -1,9 +1,10 @@
 /* Link to Google Fonts used throughout site */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600&display=swap');
-  
+
 
 body {
-  box-sizing: border-box; /* to account for any border and padding values */
+  box-sizing: border-box;
+  /* to account for any border and padding values */
   margin: 0;
   padding: 0;
 }
@@ -11,16 +12,15 @@ body {
 .backdrop {
   background: url("..//images/backdrop-image-cropped.jpg") center center no-repeat;
   background-size: cover;
-  background-color: lightblue; /* in case background image does not load */
-  min-height: 100vh; 
+  background-color: lightblue;
+  /* in case background image does not load */
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
 
-h1 {
-
-}
+h1 {}
 
 .score-time-info {
   display: flex;
@@ -45,12 +45,14 @@ h1 {
   justify-content: space-between;
   flex-wrap: wrap;
   top: 70%;
-  flex-shrink: 0; /*don't think this is needed?*/
+  flex-shrink: 0;
+  /*don't think this is needed?*/
   align-self: center;
 }
 
 .mole {
-  position: absolute;/* Use absolute content will not affect the dimensions of the hole*/
+  position: absolute;
+  /* Use absolute content will not affect the dimensions of the hole*/
   width: 50%;
   height: 80%;
   background: url("../images/mole-image.png") center no-repeat;
@@ -59,17 +61,21 @@ h1 {
   left: 45%;
   margin-left: -25%;
   bottom: 0;
-  z-index: -2; /*reset stacking order so mole behind hole */
+  z-index: -2;
+  /*reset stacking order so mole behind hole */
   transition: 2s;
-  top: 35%; /*to move the mole div under the hole div and this will be reset to 0 with js to have the mole peek up*/
+  top: 35%;
+  /*to move the mole div under the hole div and this will be reset to 0 with js to have the mole peek up*/
 }
 
 .hole {
   position: relative;
   width: 30%;
   padding: 0 5px;
-  z-index: 2; /*reset stacking order so hole on top of mole */
-  overflow: hidden; /*hides moles - don't think needed anymore?*/
+  z-index: 2;
+  /*reset stacking order so hole on top of mole */
+  overflow: hidden;
+  /*hides moles - don't think needed anymore?*/
 }
 
 /* To make this div a perfect responsive square the :after pseudo-element was used.  
@@ -83,12 +89,11 @@ h1 {
 }
 
 .hole.up .mole {
-  top: 0; /*set to 0 with js to have the mole peek up*/
+  top: 0;
+  /*set to 0 with js to have the mole peek up*/
 }
 
-button {
-
-}
+button {}
 
 
 @media (min-width: 450px) {
@@ -107,6 +112,4 @@ button {
   .score-time-info {
     justify-content: space-around;
     font-size: 5vh;
-}
-
-
+  }
