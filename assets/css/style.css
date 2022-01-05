@@ -3,11 +3,12 @@
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   background-color: gray;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  min-height: 97vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
