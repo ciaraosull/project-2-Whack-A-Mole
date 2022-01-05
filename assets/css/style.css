@@ -24,8 +24,8 @@ body {
   display: flex;
   flex-direction: row;
   padding: 20px;
-  justify-content: space-around;
-  font-size: 5vh;
+  justify-content: space-between;
+  font-size: 3vh;
   
 }
 
@@ -108,12 +108,14 @@ body {
     width: 60%;
     /*margin-top: auto; to drop holes down for larger screens*/
   }
+
+  .score-time-info {
+    justify-content: space-around;
+    font-size: 5vh;
 }
 
 @media (max-width: 400px) {
-  .score-time-info {
-    justify-content: space-between;
-    font-size: 4vh;
+  
   }
 }
 
