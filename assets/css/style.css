@@ -13,7 +13,7 @@
 }
 
 .header-info {
-  background-color: yellow;
+
 }
 
 /* draft css to test to make moles in holes using :after for responsive square divs*/
@@ -71,14 +71,11 @@
 }
 
 
-@media (min-width: 400px) {
-  .game-container {
-    width: 80%;
-  }
-}
+
 
 @media (min-width: 600px) {
   .game-container {
     width: 60%;
+    margin-left: 15%;
   }
 }
