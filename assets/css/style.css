@@ -3,7 +3,6 @@
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
   background-color: gray;
   box-sizing: border-box;
   margin: 0;
@@ -27,6 +26,8 @@
   flex-wrap: wrap;
   top: 70%;
   margin-top: auto;
+  flex-shrink: 0; /*to make game container sticky to bottom*/
+
 }
 
 .mole {
