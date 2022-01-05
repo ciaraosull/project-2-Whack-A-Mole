@@ -1,53 +1,36 @@
-body {
-  background-color: lightblue; 
-  box-sizing: border-box; 
+.backdrop {
+  background: url("..//images/backdrop-image-resized.jpg");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: gray;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-.background-image {
-  width: 100%;
-  height: 100%;
-  background: url("..//images/backdrop-image.jpg") top no-repeat;
-  background-size: contain;
-  background-color: red;
+.header-info {
+  background-color: yellow;
 }
-
-/*.backdrop-container {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background: url("..//images/backdrop-image.jpg") center no-repeat;
-  object-fit: fill;
-
-  }*/
-
-  /*img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    background-size: cover;
-    background-position: center;
-  }*/
 
 /* draft css to test to make moles in holes using :after for responsive square divs*/
 
 
 .game-container {
-    display:flex;
-    width: 100%;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    position: absolute;
-    top: 40%;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  top: 70%;
+  margin-top: auto;
 }
 
 .mole {
-  position: absolute; /* Use absolute so its content will not affect the dimensions of the hole square*/
+  position: absolute;
+  /* Use absolute so its content will not affect the dimensions of the hole square*/
   width: 50%;
   height: 70%;
   background: url("../images/mole-image.png") center no-repeat;
@@ -58,29 +41,28 @@ body {
   bottom: 0;
   z-index: -2; /*reset stacking order so mole behind hole */
   transition: 2s;
-  top: 35%;
-  /*to move the mole div under the hole div and this will be reset with js to have the mole peek up*/
+  top: 35%; /*to move the mole div under the hole div and this will be reset with js to have the mole peek up*/
 
 }
 
 .hole {
-    position: relative;
-    width: 30%;
-    z-index: 2; /*reset stacking order so hole on top of mole */
-    overflow: hidden; /*hides moles*/
-  }
-  
-  /* To make this div a perfect responsive square the :after pseudo-element was used.  
+  position: relative;
+  width: 30%;
+  z-index: 2; /*reset stacking order so hole on top of mole */
+  overflow: hidden; /*hides moles*/
+}
+
+/* To make this div a perfect responsive square the :after pseudo-element was used.  
   By adding an empty :after element to .square and set padding-bottom: 100%:*/
-  .hole:after {
-    content: "";
-    display: block;
-    padding-bottom: 90%;
-    background: url("../images/hole-image.png") bottom center no-repeat;
-    background-size: contain;
-  }
-  
-  
+.hole:after {
+  content: "";
+  display: block;
+  padding-bottom: 90%;
+  background: url("../images/hole-image.png") bottom center no-repeat;
+  background-size: contain;
+}
+
+
 
 .hole.up .mole {
   top: 0;
