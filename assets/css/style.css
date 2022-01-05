@@ -1,15 +1,21 @@
-.backdrop {
-  background: url("..//images/backdrop-image-resized.jpg");
-  background-position: center bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: gray;
+body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+
+}
+
+
+.backdrop {
+  background: url("..//images/backdrop-image-cropped.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: gray;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .header-info {
@@ -22,11 +28,12 @@
 .game-container {
   display: flex;
   width: 100%;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-wrap: wrap;
   top: 70%;
-  margin-top: auto;
   flex-shrink: 0; /*to make game container sticky to bottom*/
+  align-self: center;
+
 
 }
 
@@ -71,11 +78,23 @@
 }
 
 
-
+@media (min-width: 450px) {
+  .game-container {
+    width: 80%;
+    /*margin-top: auto; to drop holes down for larger screens*/
+  }
+}
 
 @media (min-width: 600px) {
   .game-container {
     width: 60%;
-    margin-left: 15%;
+    /*margin-top: auto; to drop holes down for larger screens*/
+  }
+}
+
+@media (min-width: 900px) {
+  .game-container {
+    width: 60%;
+    /*margin-top: auto; to drop holes down for larger screens*/
   }
 }
