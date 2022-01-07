@@ -110,18 +110,22 @@ button {}
 @media (min-width: 450px) {
   .game-container {
     width: 80%;
-    /*margin-top: auto; to drop holes down for larger screens*/
   }
 }
 
 @media (min-width: 600px) {
   .game-container {
     width: 60%;
-    /*margin-top: auto; to drop holes down for larger screens*/
   }
 
   .score-time-info {
     justify-content: space-around;
     font-size: 5vh;
+  }
+}
+
+@media (min-width: 800px) {
+  .hole {
+    width: 25%;
   }
 }
