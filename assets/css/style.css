@@ -7,6 +7,7 @@ body {
   /* to account for any border and padding values */
   margin: 0;
   padding: 0;
+  border: none;
 }
 
 .backdrop {
@@ -24,12 +25,13 @@ h1 {
   color: brown;
   font-family: 'Bubblegum Sans', cursive;
   font-size: 3em;
+  margin: 0;
 }
 
 .score-time-info {
   display: flex;
   flex-direction: row;
-  padding: 20px;
+  padding: 0 20px;
   justify-content: space-between;
   font-size: 3vh;
 }
@@ -40,6 +42,7 @@ h1 {
   color: #fff;
   font-family: 'Roboto Mono', monospace;
   padding: 10px;
+  margin: 0;
 }
 
 /*container to hold the moles & holes*/
@@ -97,6 +100,10 @@ h1 {
   /*set to 0 with js to have the mole peek up*/
 }
 
+.game-controls {
+  margin: 0;
+}
+
 button {}
 
 
@@ -117,3 +124,4 @@ button {}
     justify-content: space-around;
     font-size: 5vh;
   }
+}
