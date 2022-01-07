@@ -13,7 +13,8 @@ body {
 .backdrop {
   background: url("..//images/backdrop-image-cropped.jpg") center center no-repeat;
   background-size: cover;
-  background-color: lightblue; /* in case background image does not load */
+  background-color: lightblue;
+  /* in case background image does not load */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -101,10 +102,16 @@ h1 {
 }
 
 .game-controls {
-  margin: 0;
+  display: flex;
+  justify-content: space-evenly;
+
 }
 
-button {}
+.game-controls button {
+  border-radius: 10px;
+  font-family: 'Roboto Mono', monospace;
+  padding: 10px;
+}
 
 
 @media (min-width: 450px) {
