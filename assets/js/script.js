@@ -9,7 +9,7 @@
 //function randomHoles to get random DOM element of “holes”. 
 //Then to generate a random number (0-5) of the 6 holes (holes.lenght) the moles peek out of each time.
 
-let hole = document.getElementsByClassName("hole"); //try not make global variables - test only
+const hole = document.getElementsByClassName("hole");
 
 //console.log(hole.length); //6 because 6 holes in node so far
 
