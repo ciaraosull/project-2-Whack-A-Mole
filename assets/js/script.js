@@ -43,21 +43,19 @@ function randomTimeBetweenPeek(min, max) {
  */
 
 function peek() {
-    let randTime = randomTimeBetweenPeek(500, 2000); //use the random time from above with 1-3 secs
+    let randTime = randomTimeBetweenPeek(500, 2000); //use the random time from above with .5-2 secs
     let randHole = randomHole(hole);
-//  console.log(randomTime, randHole); //log to console and random hole selected at random time between 1-3secs (yay!)
-
-//add the moles peeking up function myFunction() {document.getElementById("myDIV").classList.add("mystyle");} (W3schools ref)
-//for moles function peek() {document.getElementByClassName(.hole.up .mole).classList.add("up")}
-//take the randHole variable and assign that the class "up".  
-    randHole.classList.add("up");
-//setTimeOut to remove the class "up" after the random time generated has passed
-
-    setTimeout() {
-        hole.classList.remove("up");
-    }, randTime;
-
+    //  console.log(randomTime, randHole); //log to console and random hole selected at random time between 1-3secs (yay!)
+    randHole.classList.add("up"); //take the randHole variable and assign that the class "up".  
+    //setTimeOut to remove the class "up" after the random time generated has passed
+    setTimeout(function() {
+        randHole.classList.remove("up");
+    }, randTime);
 }
+
+
+
+
 
 
 
