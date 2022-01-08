@@ -5,10 +5,6 @@
 
 
 
-
-//function randomHoles to get random DOM element of “holes”. 
-//Then to generate a random number (0-5) of the 6 holes (holes.lenght) the moles peek out of each time.
-
 const hole = document.getElementsByClassName("hole");
 
 //console.log(hole.length); //6 because 6 holes in node so far
@@ -16,6 +12,12 @@ const hole = document.getElementsByClassName("hole");
 //let randomHole = Math.floor(Math.random() * hole.length);
 //console.log(randomHole); //random number between 0-5
 
+/**
+ * function randomHole to get random DOM element of “holes” &
+ * generate random number between the lenght of holes. 
+ */
+
+//using hole.lenght so can add/remove holes in future without changing code
 function randomHole(hole) {
     let x = Math.floor(Math.random() * hole.length); // x stands for the random hole number 0-5
     let allHoles = hole[x];
@@ -26,7 +28,6 @@ function randomHole(hole) {
 /**
  * function randomTimeBetweenPeek to calculate
  * a random amount of time between the moles peeking up.
- * Used Math.round to keep the time as whole number?
  */
 
 function randomTimeBetweenPeek(min, max) {
@@ -50,6 +51,11 @@ function peek() {
 //for moles function peek() {document.getElementByClassName(.hole.up .mole).classList.add("up")}
 //take the randHole variable and assign that the class "up".  
     randHole.classList.add("up");
+//setTimeOut to remove the class "up" after the random time generated has passed
+
+    setTimeout() {
+        hole.classList.remove("up");
+    }, randTime;
 
 }
 
