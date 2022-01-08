@@ -51,24 +51,22 @@ function peek() {
     //setTimeOut to remove the class "up" after the random time generated has passed
     setTimeout(function() {
         randHole.classList.remove("up");
-    //if statement here for when timer runs out to stop it from running peek?
+    //if statement here for when timer runs out to stop it from running peek
     if (gameOver === false) {
         peek();
     }
  //to keep moles popping up and down until time is over
     }, randTime);
-   
-
 }
-
-
 
 function playGame() {
     peek();
     peek();//running twice makes moles pop up in several locations at same time so harder
     //set game over for when time runs out?
-    
-    
+    setTimeout(function() {
+        gameOver = true;
+    }, 30000);
+
 }
 
 
