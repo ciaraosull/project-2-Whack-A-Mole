@@ -65,7 +65,7 @@ function playGame() {
     //set game over for when time runs out?
     setTimeout(function() {
         gameOver = true;
-    }, 30000);//set gameOver to true here after 30secs, then if statement in function peek() will stop running peek
+    }, 20000);//set gameOver to true here after 30secs, then if statement in function peek() will stop running peek
 }
 
 
