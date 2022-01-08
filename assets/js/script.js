@@ -55,6 +55,11 @@ function peek() {
 
 }
 
+function playGame() {
+    peek();
+    peek();//running twice makes moles pop up in several locations at same time so harder
+}
+
 
 
 
