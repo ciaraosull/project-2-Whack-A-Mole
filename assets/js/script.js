@@ -6,6 +6,7 @@
 
 
 const hole = document.getElementsByClassName("hole");
+let gameOver = false;
 
 //console.log(hole.length); //6 because 6 holes in node so far
 
@@ -50,16 +51,24 @@ function peek() {
     //setTimeOut to remove the class "up" after the random time generated has passed
     setTimeout(function() {
         randHole.classList.remove("up");
-        //if statement here for when timer runs out to stop it from running peek?
-        peek(); //to keep moles popping up and down until time is over
+    //if statement here for when timer runs out to stop it from running peek?
+    if (gameOver === false) {
+        peek();
+    }
+ //to keep moles popping up and down until time is over
     }, randTime);
+   
 
 }
+
+
 
 function playGame() {
     peek();
     peek();//running twice makes moles pop up in several locations at same time so harder
     //set game over for when time runs out?
+    
+    
 }
 
 
