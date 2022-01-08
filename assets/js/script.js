@@ -51,7 +51,7 @@ function peek() {
     //setTimeOut to remove the class "up" after the random time generated has passed
     setTimeout(function() {
         randHole.classList.remove("up");
-    //if statement here for when timer runs out to stop it from running peek
+    //if statement here for when timer is running (while gameOver is false) to keep running peek
     if (gameOver === false) {
         peek();
     }
@@ -65,8 +65,7 @@ function playGame() {
     //set game over for when time runs out?
     setTimeout(function() {
         gameOver = true;
-    }, 30000);
-
+    }, 30000);//set gameOver to true here after 30secs, then if statement in function peek() will stop running peek
 }
 
 
