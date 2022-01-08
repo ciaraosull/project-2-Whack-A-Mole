@@ -43,18 +43,17 @@ function randomTimeBetweenPeek(min, max) {
  */
 
 function peek() {
-    let randTime = randomTimeBetweenPeek(500, 2000); //use the random time from above with .5-2 secs
+    let randTime = randomTimeBetweenPeek(500, 1500); //use the random time from above with .5-2 secs
     let randHole = randomHole(hole);
     //  console.log(randomTime, randHole); //log to console and random hole selected at random time between 1-3secs (yay!)
     randHole.classList.add("up"); //take the randHole variable and assign that the class "up".  
     //setTimeOut to remove the class "up" after the random time generated has passed
     setTimeout(function() {
         randHole.classList.remove("up");
+        peek();
     }, randTime);
+
 }
-
-
-
 
 
 
