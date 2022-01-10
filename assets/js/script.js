@@ -71,10 +71,9 @@ function timeLeft(i) {
         i--;
         if (i === -1) { 
         clearInterval(timeUp)
+        document.getElementById("time-left").innerHTML = "Time Up";
     }
     }, 1000);
-
-    
 }
     
 
