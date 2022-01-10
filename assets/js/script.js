@@ -64,6 +64,21 @@ function playGame() {
     }, 20000); //set gameOver to true here after 20secs, then if statement in function peek() will stop running peek
 }
 
+
+function timeLeft(i) {
+    let timeUp = setInterval(function() {
+        document.getElementById("timer").innerHTML = i;
+        i--;
+        if (i === -1) { 
+        clearInterval(timeUp)
+    }
+    }, 1000);
+
+    
+}
+    
+
+
 /**
  * function mole hit on click
  */
