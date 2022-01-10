@@ -63,6 +63,7 @@ function peek() {
  */
 function playGame() {
     gameOver = false; //to reset game on start
+    timeLeft(20);
     peek();
     peek(); //running twice makes moles pop up in several locations at same time so harder
     setTimeout(function () {
@@ -72,16 +73,17 @@ function playGame() {
 }
 
 
-//function timeLeft(i) {
-  //  let countDown = setInterval(function() {
-    //    document.getElementById("timer").innerHTML = i;
-      //  i--;
-        //if (i === -1) {
-          //  clearInterval(countDown)
-            //document.getElementById("time-left").innerHTML = "Time Up";
-        //}
-    //}, 1000);
-//}
+function timeLeft(i) {
+    let countDown = setInterval(function() {
+        document.getElementById("timer").innerHTML = i;
+        i--;
+        if (i === -1) {
+            clearInterval(countDown)
+            document.getElementById("time-left").innerHTML = "Time Up";
+            document.getElementById("playButton-text").innerHTML = "Play Again";
+        }
+    }, 1000);
+}
 
     
 
