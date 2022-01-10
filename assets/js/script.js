@@ -1,6 +1,16 @@
 //Add event listener DOM load before running game- code to be executed when page has finished loading
-
 //Add event listener added to buttons elements - code to be executed when user clicks buttons
+
+document.addEventListener("DOMContentLoaded", function() {
+    let button = document.getElementById("playButton");
+    
+    button.addEventListener("click", function() {
+        alert("You clicked Play");
+    });
+})
+
+
+
 
 
 
@@ -56,7 +66,6 @@ function peek() {
  */
 function playGame() {
     gameOver = false; //to reset game on start
-    timeLeft(20);
     peek();
     peek(); //running twice makes moles pop up in several locations at same time so harder
     setTimeout(function () {
@@ -66,16 +75,16 @@ function playGame() {
 }
 
 
-function timeLeft(i) {
-    let countDown = setInterval(function() {
-        document.getElementById("timer").innerHTML = i;
-        i--;
-        if (i === -1) {
-            clearInterval(countDown)
-            document.getElementById("time-left").innerHTML = "Time Up";
-        }
-    }, 1000);
-}
+//function timeLeft(i) {
+  //  let countDown = setInterval(function() {
+    //    document.getElementById("timer").innerHTML = i;
+      //  i--;
+        //if (i === -1) {
+          //  clearInterval(countDown)
+            //document.getElementById("time-left").innerHTML = "Time Up";
+        //}
+    //}, 1000);
+//}
 
     
 
