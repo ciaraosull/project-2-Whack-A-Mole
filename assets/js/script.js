@@ -60,6 +60,7 @@ function peek() {
 }
 
 function playGame() {
+    gameOver = false;
     peek();
     peek();//running twice makes moles pop up in several locations at same time so harder
     //set game over for when time runs out?
