@@ -1,4 +1,3 @@
-
 //Add event listener DOM load before running game- code to be executed when page has finished loading
 
 //Add event listener added to buttons elements - code to be executed when user clicks buttons
@@ -22,8 +21,8 @@ let gameOver = false;
 function randomHole(hole) {
     let x = Math.floor(Math.random() * hole.length); // x stands for the random hole number 0-5
     let allHoles = hole[x];
-//  console.log(allHoles); //tested and random hole generated each time!
-    return(allHoles);
+    //  console.log(allHoles); //tested and random hole generated each time!
+    return (allHoles);
 }
 
 /**
@@ -47,26 +46,24 @@ function peek() {
     let randTime = randomTimeBetweenPeek(500, 1500); //use the random time from above with .5-1.5 secs
     let randHole = randomHole(hole);
     //  console.log(randomTime, randHole); //log to console and random hole selected at random time between 1-3secs (yay!)
-    randHole.classList.add("up"); //take the randHole variable and assign that the class "up".  
-    //setTimeOut to remove the class "up" after the random time generated has passed
-    setTimeout(function() {
-        randHole.classList.remove("up");
-    //if statement here for when timer is running (while gameOver is false) to keep running peek
-    if (gameOver === false) {
-        peek();
-    }
- //to keep moles popping up and down until time is over
-    }, randTime);
+    randHole.classList.add("up"); //take the randHole variable and assign it the class "up".  
+    setTimeout(function () {
+        randHole.classList.remove("up");//to remove the class "up" after the random time generated has passed
+        if (gameOver === false) {//when timer is running (while gameOver is false) to keep running peek
+            peek(); //to keep moles popping up and down until time is over
+            document.getElementById("playButton").disabled = true; //to disable play button once game starts
+        }
+    }, randTime); //time between moles peeking is random
 }
 
 function playGame() {
-    gameOver = false;
+    gameOver = false;//to reset game on start
     peek();
-    peek();//running twice makes moles pop up in several locations at same time so harder
-    //set game over for when time runs out?
-    setTimeout(function() {
-        gameOver = true;
-    }, 20000);//set gameOver to true here after 30secs, then if statement in function peek() will stop running peek
+    peek(); //running twice makes moles pop up in several locations at same time so harder
+    setTimeout(function () {
+        gameOver = true; //set game over for when time runs out
+        document.getElementById("playButton").disabled = false; //to enable play button once game over
+    }, 20000); //set gameOver to true here after 20secs, then if statement in function peek() will stop running peek
 }
 
 
