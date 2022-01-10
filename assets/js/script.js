@@ -1,3 +1,8 @@
+//Declare variables
+const hole = document.getElementsByClassName("hole");
+let gameOver = false;
+
+
 //Add event listener DOM load before running game- code to be executed when page has finished loading
 //Add event listener added to buttons elements - code to be executed when user clicks buttons
 
@@ -5,17 +10,9 @@ document.addEventListener("DOMContentLoaded", function() {
     let button = document.getElementById("playButton");
     
     button.addEventListener("click", function() {
-        alert("You clicked Play");
+        playGame()
     });
 })
-
-
-
-
-
-
-const hole = document.getElementsByClassName("hole");
-let gameOver = false;
 
 //console.log(hole.length); //6 because 6 holes in node so far
 //let randomHole = Math.floor(Math.random() * hole.length);
