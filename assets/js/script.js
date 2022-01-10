@@ -79,11 +79,13 @@ function timeLeft(i) {
         i--;
         if (i === -1) {
             clearInterval(countDown)
-            document.getElementById("time-left").innerHTML = "Time Up";
+            document.getElementById("time-left").innerHTML = "Time Up"; //need to reset this if play again (playGame function clicked)?
             document.getElementById("playButton-text").innerHTML = "Play Again";
         }
     }, 1000);
 }
+
+
 
     
 
