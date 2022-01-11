@@ -44,7 +44,13 @@ h1 {
 }
 
 .game-info-container p {
-  background-color: rgba(93, 93, 93, 0.7)
+  background-color: rgba(93, 93, 93)
+}
+
+#time-up-alert {
+  background-color: red;
+  margin-left: -50%;
+  visibility: hidden;
 }
 
 .game-info-container button {

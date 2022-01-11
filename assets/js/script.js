@@ -48,7 +48,7 @@ function peek() {
     let randTime = randomTimeBetweenPeek(500, 1500); //use the random time from above with .5-1.5 secs
     let randHole = randomHole(hole);
     //  console.log(randomTime, randHole); //log to console and random hole selected at random time between 1-3secs (yay!)
-    randHole.classList.add("up"); //take the randHole variable and assign it the class "up".  
+    randHole.classList.add("up"); //take the randHole variable and assign it the class "up" to show moles.  
     setTimeout(function () {
         randHole.classList.remove("up"); //to remove the class "up" after the random time generated has passed
         if (gameOver === false) { //when timer is running (while gameOver is false) to keep running peek
@@ -63,6 +63,8 @@ function peek() {
  */
 function playGame() {
     gameOver = false; //to reset game on start
+    document.getElementById("time-up-alert").style.visibility = "hidden"; //hide time-up message on game start & play again
+    document.getElementById("time-left").style.visibility = "visible"; //show countdown timer on game start & play again
     timeLeft(20);
     peek();
     peek(); //running twice makes moles pop up in several locations at same time so harder
@@ -79,7 +81,8 @@ function timeLeft(i) {
         i--;
         if (i === -1) {
             clearInterval(countDown)
-            document.getElementById("time-left").innerHTML = "Time Up"; //need to reset this if play again (playGame function clicked)?
+            document.getElementById("time-up-alert").style.visibility = "visible"; //hide time-up message on game start & play again
+            document.getElementById("time-left").style.visibility = "hidden"; //show countdown timer on game start & play again
             document.getElementById("playButton-text").innerHTML = "Play Again";
         }
     }, 1000);
