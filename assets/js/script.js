@@ -1,5 +1,7 @@
 //Declare variables
 const hole = document.getElementsByClassName("hole");
+const moles = document.querySelectorAll('.mole')
+const score = 0;
 let gameOver = false;
 
 //Add event listener DOM load before running game- code to be executed when page has finished loading
@@ -11,6 +13,21 @@ document.addEventListener("DOMContentLoaded", function() {
     button.addEventListener("click", function() {
         playGame() //runs the playGame function below when user clicks the play button
     });
+
+/**
+ * function mole hit on click
+ *  ref: https://www.w3schools.com/jsref/event_onmousedown.asp //for mouse
+ *  ref: https://www.w3schools.com/jsref/event_onkeydown.asp // for keyboard
+ * 
+ * rob: adds event but not firing message to console.
+ */
+    moles.forEach(mole => {
+        mole.addEventListener("mousedown", function() {
+            console.log("mole " + mole.id + " hit!");
+            score ++;
+        });
+    })
+    
 })
 
 /**
@@ -80,7 +97,7 @@ function timeLeft(i) {
 }
 
 /**
- * function mole hit on click
+ * function mole hit on click added to 'on-page load' event
  */
 
 
