@@ -10,7 +10,7 @@ body {
 }
 
 .backdrop {
-  background: url("..//images/backdrop-image-cropped.jpg") center center no-repeat;
+  background: url("..//images/backdrop-image.png") center center no-repeat;
   background-size: cover;
   background-color: lightblue; /* in case background image does not load */
   min-height: 100vh;

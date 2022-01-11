@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
     let button = document.getElementById("playButton");
     
     button.addEventListener("click", function() {
-        playGame()
+        playGame() //runs the playGame function below when user clicks the play button
     });
 })
 
