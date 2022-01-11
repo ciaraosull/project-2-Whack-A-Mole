@@ -2,9 +2,8 @@
 const hole = document.getElementsByClassName("hole");
 let gameOver = false;
 
-
 //Add event listener DOM load before running game- code to be executed when page has finished loading
-//Add event listener added to buttons elements - code to be executed when user clicks buttons
+//Add event listener added to button elements - code to be executed when user clicks button
 
 document.addEventListener("DOMContentLoaded", function() {
     let button = document.getElementById("playButton");
@@ -14,10 +13,6 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 })
 
-//console.log(hole.length); //6 because 6 holes in node so far
-//let randomHole = Math.floor(Math.random() * hole.length);
-//console.log(randomHole); //random number between 0-5
-
 /**
  * function randomHole to get random DOM element of “holes” &
  * generate random number between the lenght of holes. 
@@ -25,7 +20,6 @@ document.addEventListener("DOMContentLoaded", function() {
 function randomHole(hole) {
     let x = Math.floor(Math.random() * hole.length); //using hole.lenght so can add/remove holes in future without changing code
     let allHoles = hole[x]; // x stands for the random hole number 0-5 generated above
-    //  console.log(allHoles); //tested and random hole generated each time!
     return (allHoles);
 }
 
@@ -36,8 +30,6 @@ function randomHole(hole) {
 function randomTimeBetweenPeek(min, max) {
     return Math.round(Math.random() * (max - min) + min);
 }
-//console.log(randomTimeBetweenPeek(min, max)); //tested & random whole number generated each time!
-
 
 /**
  * function peek for getting moles to pop up out of a random hole 
@@ -45,17 +37,16 @@ function randomTimeBetweenPeek(min, max) {
  * into hole
  */
 function peek() {
-    let randTime = randomTimeBetweenPeek(500, 1500); //use the random time from above with .5-1.5 secs
+    let randTime = randomTimeBetweenPeek(500, 1500); //use the random time from above & set between .5-1.5 secs
     let randHole = randomHole(hole);
-    //  console.log(randomTime, randHole); //log to console and random hole selected at random time between 1-3secs (yay!)
-    randHole.classList.add("up"); //take the randHole variable and assign it the class "up" to show moles.  
+    randHole.classList.add("up"); //take the randHole variable and assign it the class "up" to show moles when peek() is run  
     setTimeout(function () {
         randHole.classList.remove("up"); //to remove the class "up" after the random time generated has passed
         if (gameOver === false) { //when timer is running (while gameOver is false) to keep running peek
             peek(); //to keep moles popping up and down until time is over
-            document.getElementById("playButton").disabled = true; //to disable play button once game starts
+            document.getElementById("playButton").disabled = true; //to disable play button once game starts to avoid user clicking and setting off peek() multiple times
         }
-    }, randTime); //time between moles peeking is random
+    }, randTime); //time between moles peeking is random (as above)
 }
 
 /**
@@ -65,33 +56,28 @@ function playGame() {
     gameOver = false; //to reset game on start
     document.getElementById("time-up-alert").style.visibility = "hidden"; //hide time-up message on game start & play again
     document.getElementById("time-left").style.visibility = "visible"; //show countdown timer on game start & play again
-    timeLeft(20);
+    timeLeft(20); //to pass 20 through the timer function below called timeLeft()
     peek();
     peek(); //running twice makes moles pop up in several locations at same time so harder
     setTimeout(function () {
         gameOver = true; //set game over for when time runs out
-        document.getElementById("playButton").disabled = false; //to enable play button again once game over
+        document.getElementById("playButton").disabled = false; //to enable play (or play again) button again once game over
     }, 20000); //set gameOver to true here after 20secs, then if statement in function peek() will stop running peek
 }
 
 
 function timeLeft(i) {
-    let countDown = setInterval(function() {
-        document.getElementById("timer").innerHTML = i;
+    let countDown = setInterval(function() { //create a variable called countDown and take 1 away each time until 0
+        document.getElementById("timer").innerHTML = i;//access the timer html text to display the number counting down
         i--;
         if (i === -1) {
-            clearInterval(countDown)
+            clearInterval(countDown) //if statement for what to do when timer gets to 0 and gmae is over
             document.getElementById("time-up-alert").style.visibility = "visible"; //hide time-up message on game start & play again
             document.getElementById("time-left").style.visibility = "hidden"; //show countdown timer on game start & play again
-            document.getElementById("playButton-text").innerHTML = "Play Again";
+            document.getElementById("playButton-text").innerHTML = "Play Again";//change the Play button text to play again
         }
-    }, 1000);
+    }, 1000);//counts down the number 1 second in the setInterval for countDown variable
 }
-
-
-
-    
-
 
 /**
  * function mole hit on click
