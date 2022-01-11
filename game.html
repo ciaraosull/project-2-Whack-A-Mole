@@ -12,31 +12,34 @@
     <!-- Link to Fontawesome -->
     <script src="https://kit.fontawesome.com/b83175b9a4.js" crossorigin="anonymous"></script>
 
-
     <title>Whack-A-Mole</title>
 </head>
 
 <body>
 
+    <!--Background image & container-->
     <section class="backdrop">
 
-        <!--Test html to make responsive squares-->
+        <!--Heading-->
         <h1>Whack-A-Mole</h1>
 
         <div class="game-info-container">
             <!-- Play button -->
-            <button type="button" id="playButton">
+            <button type="button" aria-label="Play Button" id="playButton">
                 <!-- Link to Fontawesome icon for Play -->
                 <i class="fas fa-play"></i> <span id="playButton-text">Play</span>
             </button>
         </div>
 
         <div class="game-info-container">
+            <!-- Game Timer -->
             <p id="time-left">Time Left: <span id="timer">20</span></p>
 
+            <!-- Scoreboard -->
             <p>Score: <span>0</span></p>
         </div>
 
+        <!-- Holes & Moles Area -->
         <div class="game-container">
             <div class="hole hole1">
                 <div class="mole"></div>
@@ -63,10 +66,11 @@
             </div>
 
         </div>
-        <!-- Add Fontawesome Icons to Buttons -->
+        
         <section class="game-controls">
-
-            <button type="button">
+            <!-- Return to Home Screen Button -->
+            <button type="button" aria-label="Return to Home Screen Button">
+                <!--Fontawesome Icons for Home Button -->
                 <i class="fas fa-home"></i> Home
             </button>
 
