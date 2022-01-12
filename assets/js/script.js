@@ -1,8 +1,9 @@
 //Declare variables
 const hole = document.getElementsByClassName("hole");
-const mole = document.getElementById("mole");
+//const mole = document.getElementsByClassName("mole");
 const score = document.getElementById("molesHit");
 let gameOver = false;
+let moles = document.getElementsByClassName("mole");
 
 //Add event listener DOM load before running game- code to be executed when page has finished loading
 //Add event listener added to button elements - code to be executed when user clicks button
@@ -14,6 +15,8 @@ document.addEventListener("DOMContentLoaded", function() {
         playGame() //runs the playGame function below when user clicks the play button
     });
 })
+
+    
 
 /**
  * function randomHole to get random DOM element of “holes” &
@@ -84,6 +87,18 @@ function timeLeft(i) {
 /**
  * function mole hit on click
  */
+
+function hitMoles() {
+     
+     moles.forEach(mole => {
+        mole.addEventListener("click", hitMoles)
+        alert("hit");
+        
+    });
+}
+
+
+
 
 
 /**
