@@ -1,5 +1,7 @@
 //Declare variables
 const hole = document.getElementsByClassName("hole");
+const mole = document.getElementById("mole");
+const score = document.getElementById("molesHit");
 let gameOver = false;
 
 //Add event listener DOM load before running game- code to be executed when page has finished loading
