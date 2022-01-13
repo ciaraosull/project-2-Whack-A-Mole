@@ -112,6 +112,7 @@ h1 {
   /*set to 0 with js to have the mole peek up*/
 }
 
+
 .game-controls {
   display: flex;
   justify-content: space-evenly;

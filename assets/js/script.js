@@ -1,6 +1,5 @@
 //Declare variables
 const hole = document.getElementsByClassName("hole");
-//const mole = document.getElementsByClassName("mole");
 const score = document.getElementById("molesHit");
 let gameOver = false;
 
@@ -90,7 +89,7 @@ function hitMoles() {
     alert("hit");
 }
 
-    let moles = document.getElementsByClassName("mole");
+    let moles = document.querySelectorAll('.mole');
     for (let i = 0; i < moles.length; i++) {
         moles[i].addEventListener("click", hitMoles);
     }
