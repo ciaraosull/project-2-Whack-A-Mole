@@ -73,9 +73,9 @@ h1 {
   position: absolute;
   /* Use absolute content will not affect the dimensions of the hole*/
   width: 50%;
-  height: 80%;
-  background: url("../images/mole-image.png") center no-repeat;
-  background-size: contain;
+  height: 60%;
+  background: url("../images/mole-image.png") bottom no-repeat;
+  background-size: 130%;
   /*Because position:absolute was used, then to center this pos left and neg margin left was used*/
   left: 45%;
   margin-left: -25%;
