@@ -3,7 +3,7 @@ const hole = document.getElementsByClassName("hole");
 //const mole = document.getElementsByClassName("mole");
 const score = document.getElementById("molesHit");
 let gameOver = false;
-let moles = document.getElementsByClassName("mole");
+
 
 //Add event listener DOM load before running game- code to be executed when page has finished loading
 //Add event listener added to button elements - code to be executed when user clicks button
@@ -84,24 +84,16 @@ function timeLeft(i) {
     }, 1000);//counts down the number 1 second in the setInterval for countDown variable
 }
 
-/**
- * function mole hit on click
- */
+
 
 function hitMoles() {
-     
-     moles.forEach(mole => {
-        mole.addEventListener("click", hitMoles)
-        alert("hit");
-        
-    });
+    alert("hit");
 }
 
+    let moles = document.getElementsByClassName("mole");
+    for (let i = 0; i < moles.length; i++) {
+        moles[i].addEventListener("click", hitMoles);
+    }
 
 
 
-
-/**
- * function scoreboard to calculate the
- * score increasing on every successful hit of mole
- */
