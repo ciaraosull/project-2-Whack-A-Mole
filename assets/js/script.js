@@ -41,7 +41,7 @@ function randomTimeBetweenPeek(min, max) {
  * into hole
  */
 function peek() {
-    let randTime = randomTimeBetweenPeek(1000, 3000); //use the random time from above & set between .5-1.5 secs
+    let randTime = randomTimeBetweenPeek(500, 2000); //use the random time from above & set between .5-1.5 secs
     let randHole = randomHole(hole);
     randHole.classList.add("up"); //take the randHole variable and assign it the class "up" to show moles when peek() is run  
     setTimeout(function () {
