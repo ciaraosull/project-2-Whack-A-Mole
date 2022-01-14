@@ -1,21 +1,21 @@
 //Declare variables
 const hole = document.getElementsByClassName("hole");
-const score = document.getElementById("molesHit");
 let gameOver = false;
+let moles = document.querySelectorAll('.mole');
+let yourScore = document.getElementById("molesHit");
+let score = 0;
 
 
 //Add event listener DOM load before running game- code to be executed when page has finished loading
 //Add event listener added to button elements - code to be executed when user clicks button
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     let button = document.getElementById("playButton");
-    
-    button.addEventListener("click", function() {
+
+    button.addEventListener("click", function () {
         playGame() //runs the playGame function below when user clicks the play button
     });
 })
-
-    
 
 /**
  * function randomHole to get random DOM element of “holes” &
@@ -69,30 +69,33 @@ function playGame() {
     }, 20000); //set gameOver to true here after 20secs, then if statement in function peek() will stop running peek
 }
 
-
+/**
+ * function game timer countdown
+ */
 function timeLeft(i) {
-    let countDown = setInterval(function() { //create a variable called countDown and take 1 away each time until 0
-        document.getElementById("timer").innerHTML = i;//access the timer html text to display the number counting down
+    let countDown = setInterval(function () { //created a variable called countDown and take 1 away each time until 0
+        document.getElementById("timer").innerHTML = i; //access the timer html text to display the number counting down
         i--;
         if (i === -1) {
             clearInterval(countDown) //if statement for what to do when timer gets to 0 and gmae is over
             document.getElementById("time-up-alert").style.visibility = "visible"; //hide time-up message on game start & play again
             document.getElementById("time-left").style.visibility = "hidden"; //show countdown timer on game start & play again
-            document.getElementById("playButton-text").innerHTML = "Play Again";//change the Play button text to play again
+            document.getElementById("playButton-text").innerHTML = "Play Again"; //change the Play button text to play again
         }
-    }, 1000);//counts down the number 1 second in the setInterval for countDown variable
+    }, 1000); //counts down the number 1 second in the setInterval for countDown variable
 }
 
 
-
-function hitMoles() {
-    alert("hit");
+//take the moles lenght and iterate through to add click event to any time a mole is clicked the htiMoles function is called
+for (let i = 0; i < moles.length; i++) {
+    moles[i].addEventListener("click", hitMoles);
 }
 
-    let moles = document.querySelectorAll('.mole');
-    for (let i = 0; i < moles.length; i++) {
-        moles[i].addEventListener("click", hitMoles);
-    }
-
-
-
+/**
+ * function onclick of moles score increases & mole pops down
+ */
+ function hitMoles() {
+    score++;
+    yourScore.textContent = score;
+    
+}
