@@ -59,6 +59,7 @@ function peek() {
 function playGame() {
     gameOver = false; //to reset game on start
     displayScore.textContent = 0;
+    score = 0;
     document.getElementById("time-up-alert").style.visibility = "hidden"; //hide time-up message on game start & play again
     document.getElementById("time-left").style.visibility = "visible"; //show countdown timer on game start & play again
     timeLeft(20); //to pass 20 through the timer function below called timeLeft()
