@@ -62,6 +62,7 @@ function playGame() {
     score = 0;
     document.getElementById("time-up-alert").style.visibility = "hidden"; //hide time-up message on game start & play again
     document.getElementById("time-left").style.visibility = "visible"; //show countdown timer on game start & play again
+    document.getElementById("scoreboard").style.backgroundColor = "rgba(93, 93, 93)";
     timeLeft(20); //to pass 20 through the timer function below called timeLeft()
     peek();
     peek(); //running twice makes moles pop up in several locations at same time so harder
