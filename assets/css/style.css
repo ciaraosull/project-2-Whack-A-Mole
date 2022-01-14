@@ -53,6 +53,12 @@ h1 {
   visibility: hidden;
 }
 
+#your-score-alert {
+  background-color: red;
+  margin-left: -50%;
+  visibility: hidden;
+}
+
 .game-info-container button {
   background-color: rgba(0, 100, 0);
 }
@@ -86,7 +92,7 @@ h1 {
   /*to move the mole div under the hole div and this will be reset to 0 with js to have the mole peek up*/
 }
 
-.moleWhacked {
+.mole-whacked {
   position: absolute;
   /* Use absolute content will not affect the dimensions of the hole*/
   width: 50%;

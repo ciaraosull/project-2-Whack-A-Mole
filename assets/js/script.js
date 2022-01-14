@@ -62,6 +62,8 @@ function playGame() {
     score = 0;
     document.getElementById("time-up-alert").style.visibility = "hidden"; //hide time-up message on game start & play again
     document.getElementById("time-left").style.visibility = "visible"; //show countdown timer on game start & play again
+    document.getElementById("scoreboard").style.visibility = "visible";
+    document.getElementById("your-score-alert").style.visibility = "hidden";
     timeLeft(20); //to pass 20 through the timer function below called timeLeft()
     peek();
     peek(); //running twice makes moles pop up in several locations at same time so harder
@@ -82,6 +84,8 @@ function timeLeft(i) {
             clearInterval(countDown) //if statement for what to do when timer gets to 0 and game is over
             document.getElementById("time-up-alert").style.visibility = "visible"; //hide time-up message on game start & play again
             document.getElementById("time-left").style.visibility = "hidden"; //show countdown timer on game start & play again
+            document.getElementById("your-score-alert").style.visibility = "visible";//show final score
+            document.getElementById("scoreboard").style.visibility = "hidden"; //show countdown timer on game start & play again
             document.getElementById("playButton-text").innerHTML = "Play Again"; //change the Play button text to play again
         }
     }, 1000); //counts down the number 1 second in the setInterval for countDown variable
@@ -95,6 +99,7 @@ moles.forEach(mole => {//use querySelectAll to iterate through the moles and add
         displayScore.textContent = score;//add the score text to the score display
         let moleHit = document.querySelector(".hole.up") //assign variable to any mole that is up out of hole
         moleHit.classList.remove("up"); //on click remove up to put mole back down after click
+        
 
     });
 })
