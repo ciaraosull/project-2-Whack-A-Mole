@@ -1,7 +1,7 @@
 //Declare variables
 const hole = document.getElementsByClassName("hole");
 let gameOver = false;
-let moles = document.querySelectorAll('.mole');
+const moles = document.querySelectorAll('.mole');
 let displayScore = document.getElementById("molesHit");
 let score = 0;
 
@@ -85,19 +85,18 @@ function timeLeft(i) {
     }, 1000); //counts down the number 1 second in the setInterval for countDown variable
 }
 
-/**
- * function onclick of moles score increases & mole pops down
- */
- function hitMoles() { 
-    score++;//increase the score on every mole click
-    displayScore.textContent = score;//add the score text to the score display
-       //?.classList.remove("up");//to remove the class of up when mole is hit
-}
+//take the moles lenght and iterate through to add click event to any time a mole is clicked
+
+moles.forEach(mole => {//use querySelectAll to iterate through the moles and add a click event to each
+    mole.addEventListener("click", function() {
+        score ++; //increase the score on every mole click
+        displayScore.textContent = score;//add the score text to the score display
+        let moleHit = document.querySelector(".hole.up") //assign variable to any mole that is up out of hole
+        moleHit.classList.remove("up"); //on click remove up to put mole back down after click
+    });
+})
 
 
-//take the moles lenght and iterate through to add click event to any time a mole is clicked the htiMoles function is called
-for (let i = 0; i < moles.length; i++) {
-    moles[i].addEventListener("click", hitMoles);
-    };
 
-    
+
+
