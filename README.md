@@ -84,6 +84,17 @@ Three issues arose while trying to impliment addEventListener to the moles.  Thi
 
     * The third problem then arose because the z-index was removed, the moles now sat in front of the holes and could be seen making the transition from Top: 100% to Top: 0.  To fix this, the transition of 2seconds was removed, and moles now just appear out of the hole and disappear again without a raising up effect.  Given more time, the css could be altered to place the divs containing the holes lower down so the Top: 0 starts at the hole opening.  However, as time was a constraint at this time, the removal of the transition was used.
 
+2. Peek Function
+    * An issue arose with the Play button not being diasabled and it was discovered that the user may be able to click Play during the game play causing the Peek Function to run multiple times simultainiously.
+
+    * Interestingly though, by discovering this bug, running the Peek Function twice simultainiously gave the effect of more than one mole peeking out at a time.
+
+    * The Play button was disabled during game play to fix this error, however, the Peek Function was placed in the game twice to keep this very nice effect.  Any more than running Peek twice at any one time, however, just made all the moles pop up almost at the same time constantly.
+
+
+
+
+
 
 * Validator Testing
 
