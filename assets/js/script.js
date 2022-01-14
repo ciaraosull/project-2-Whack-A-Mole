@@ -58,6 +58,7 @@ function peek() {
  */
 function playGame() {
     gameOver = false; //to reset game on start
+    displayScore.textContent = 0;
     document.getElementById("time-up-alert").style.visibility = "hidden"; //hide time-up message on game start & play again
     document.getElementById("time-left").style.visibility = "visible"; //show countdown timer on game start & play again
     timeLeft(20); //to pass 20 through the timer function below called timeLeft()
@@ -93,6 +94,7 @@ moles.forEach(mole => {//use querySelectAll to iterate through the moles and add
         displayScore.textContent = score;//add the score text to the score display
         let moleHit = document.querySelector(".hole.up") //assign variable to any mole that is up out of hole
         moleHit.classList.remove("up"); //on click remove up to put mole back down after click
+
     });
 })
 
