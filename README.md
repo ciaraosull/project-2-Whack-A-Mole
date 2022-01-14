@@ -73,9 +73,10 @@ HTML, CSS, JavaScript
 ## Testing
 Testing
 
-## **Interesting Issues & Bugs Found**
+## **Interesting Issues, Bugs Found & Fixed**
 
-1. Clicking on Mole Bug
+**1. Clicking on Mole Bug**
+
 Three issues arose while trying to impliment addEventListener to the moles.  This fuction was to have several events happen once the moles were clicked, such as add to the score and sned the moles back down the hole once clicked.  
 
     * The first problem was that the moles were treated as an array.  As such the forEach method threw an error in the console stating that forEach was not a function.  As getElementByClassName was used to select the moles, this returned them as a HTML collection so there were 3 options to choose from.  At first a for(of) loop was chosen to iterate through the array to then assign the addEventListener.  However, it was decided to use querySelectorAll instead, as this returned a NodeList, which is not live, so if any changes to the DOM happen this won't alter the NodeList.  After the querySelectorAll was used for the moles then forEach was used and the addEventLister applied to all moles returned.
@@ -84,17 +85,18 @@ Three issues arose while trying to impliment addEventListener to the moles.  Thi
 
     * The third problem then arose because the z-index was removed, the moles now sat in front of the holes and could be seen making the transition from Top: 100% to Top: 0.  To fix this, the transition of 2seconds was removed, and moles now just appear out of the hole and disappear again without a raising up effect.  Given more time, the css could be altered to place the divs containing the holes lower down so the Top: 0 starts at the hole opening.  However, as time was a constraint at this time, the removal of the transition was used.
 
-2. Peek Function
+**2. Peek Function**
     * An issue arose with the Play button not being diasabled and it was discovered that the user may be able to click Play during the game play causing the Peek Function to run multiple times simultainiously.
 
     * Interestingly though, by discovering this bug, running the Peek Function twice simultainiously gave the effect of more than one mole peeking out at a time.
 
     * The Play button was disabled during game play to fix this error, however, the Peek Function was placed in the game twice to keep this very nice effect.  Any more than running Peek twice at any one time, however, just made all the moles pop up almost at the same time constantly.
 
+**Bugs Found & Not Fixed**
 
+To Do List:
 
-
-
+Can double click on mole if quick enough to add more points to score.  Need to disable click and enable again for noext mole.  Fix - look to how I disabled the play button and apply code with a time interval added on.
 
 * Validator Testing
 
@@ -153,23 +155,41 @@ Press Enter to create the local clone.
 ## Credits
 **Content**
 
-Some helpful YouTube tutorials I used to help me with coding some of the design ideas were:
+Some helpful tutorials I used to help me with coding some of the design ideas were:
 
-Net Ninja Channel
+[Modern JavaScript Tutorials by The Net Ninja](https://www.youtube.com/watch?v=FhguwBJeqWs)
+
+[Whack-A-Mole with Vinilla JS](https://youtu.be/toNFfAaWghU)
+
+[Whack-A-Mole in JavaScript](https://youtu.be/rJU3tHLgb_c)
+
+
+Some resources that helped fix particular issues or learn to impliment specific features were:
+
+*   [Fixing z-index bug by Coder.com](https://coder-coder.com/z-index-isnt-working/)
+
+*   [Making an Image Responsive by Browserstack.com](https://www.browserstack.com/guide/how-to-make-images-responsive)
+
+*   [Centering Absolute Elements by Thoughtbot.com](https://thoughtbot.com/blog/positioning)
+
+*   [Allowing only 1 click in Javascript by Code-Boxx.com](https://code-boxx.com/allow-one-click-javascript/)
+
+*   [HTML Collection Loops by GeeksforGeeks.og](https://www.geeksforgeeks.org/htmlcollection-for-loop/)
+
 
 Other resources used to learn were:
 
-W3Schools
-CSS Tricks
-Stack Overflow
+* W3Schools
+* CSS Tricks
+* Stack Overflow
 
 **Media**
 The icons in the footer were taken from Font Awesome
 
-
-Pixabay
-Pexels
-Free Images
+The Images were chosen from the following and edited in MS Paint3D:
+* Pixabay
+* Pexels
+* Free Images
 
 ## Acknowledgements
 This site was made possible due to the help, advice and support of my Code Institue Tutor Kasia, my Mentor Daisy and all the lovely people on the Code Institue Slack community.
