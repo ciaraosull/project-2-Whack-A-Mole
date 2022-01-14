@@ -78,7 +78,7 @@ function timeLeft(i) {
         document.getElementById("timer").innerHTML = i; //access the timer html text to display the number counting down
         i--;
         if (i === -1) {
-            clearInterval(countDown) //if statement for what to do when timer gets to 0 and gmae is over
+            clearInterval(countDown) //if statement for what to do when timer gets to 0 and game is over
             document.getElementById("time-up-alert").style.visibility = "visible"; //hide time-up message on game start & play again
             document.getElementById("time-left").style.visibility = "hidden"; //show countdown timer on game start & play again
             document.getElementById("playButton-text").innerHTML = "Play Again"; //change the Play button text to play again
