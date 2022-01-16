@@ -86,24 +86,6 @@ h1 {
   /*to move the mole div under the hole div and this will be reset to 0 with js to have the mole peek up*/
 }
 
-.mole-whacked {
-  position: absolute;
-  /* Use absolute content will not affect the dimensions of the hole*/
-  width: 50%;
-  height: 60%;
-  background-color: red;
-  /*Because position:absolute was used, then to center this pos left and neg margin left was used*/
-  left: 45%;
-  margin-left: -25%;
-  bottom: 0;
-  /*z-index: 2;*/
-  /*reset stacking order so mole behind hole */
-  top: 0;
-  /*to move the mole div under the hole div and this will be reset to 0 with js to have the mole peek up*/
-  visibility: hidden;
-}
-
-
 .hole {
   position: relative;
   width: 30%;
