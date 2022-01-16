@@ -95,10 +95,11 @@ moles.forEach(mole => {//use querySelectAll to iterate through the moles and add
     mole.addEventListener("click", function() {
         score ++; //increase the score on every mole click
         displayScore.textContent = score;//add the score text to the score display
-        mole.style.backgroundImage = "url('assets/images/mole-whacked-image.png')"; 
-        //setTimeout(function () {
-            //change background image here
-        //}, 5000);
+        mole.style.backgroundImage = "url('assets/images/mole-whacked-image.png')";
+        setTimeout(function () {
+            mole.style.backgroundImage = "url('assets/images/mole-image.png')"; 
+        }, 800);//changes mole pic on click but stays that way, does not change it back?
+
         
         //Add this to remove moles after click
         //let moleHit = document.querySelector(".hole.up") //assign variable to any mole that is up out of hole
