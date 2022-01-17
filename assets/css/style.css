@@ -27,11 +27,27 @@ h1 {
   margin: 0;
 }
 
+.game-controls {
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+/*Game Info Box Button */
+#game-instructions {
+  border-radius: 10px;
+  font-family: 'Roboto Mono', monospace;
+  padding: 10px;
+  background-color: blue;
+  color: #fff;
+}
+
+
 .game-info-container {
   display: flex;
   padding: 0 5px;
   justify-content: space-around;
-  font-size: 2.5vh;
+  font-size: 2vh;
 }
 
 .game-info-container p,
@@ -53,6 +69,7 @@ h1 {
   visibility: hidden;
 }
 
+/*Play Button */
 .game-info-container button {
   background-color: rgba(0, 100, 0);
 }
@@ -110,22 +127,6 @@ h1 {
   top: 0;
   /*set to 0 with js to have the mole peek up*/
 }
-
-
-.game-controls {
-  display: flex;
-  justify-content: space-evenly;
-
-}
-
-.game-controls button {
-  border-radius: 10px;
-  font-family: 'Roboto Mono', monospace;
-  padding: 10px;
-  background-color: #922616;
-  color: #fff;
-}
-
 
 @media (min-width: 450px) {
   .game-container {
