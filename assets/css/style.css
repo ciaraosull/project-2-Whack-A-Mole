@@ -20,7 +20,7 @@ body {
   text-align: center;
 }
 
-h1 {
+h1, h2 {
   color: brown;
   font-family: 'Bubblegum Sans', cursive;
   font-size: 3em;
@@ -46,7 +46,7 @@ h1 {
 .modalInfoBox {
   display: none; /* Hidden by default */
   position: fixed;
-  z-index: 1; /* Sit on top */
+  z-index: 3; /* Sit on top */
   padding-top: 100px;
   left: 0;
   top: 0;
@@ -68,7 +68,7 @@ h1 {
 
 /* The Game Info Box Close Button */
 .close {
-  color: #aaaaaa;
+  color: #000;
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -76,11 +76,10 @@ h1 {
 
 .close:hover,
 .close:focus {
-  color: #000;
+  color: #aaaaaa;
   text-decoration: none;
   cursor: pointer;
 }
-
 
 .game-info-container {
   display: flex;
@@ -89,16 +88,18 @@ h1 {
   font-size: 2vh;
 }
 
-.game-info-container p,
+.game-info-container p, 
+.info-box-content ul, 
 .game-info-container button {
   border-radius: 10px;
   color: #fff;
   font-family: 'Roboto Mono', monospace;
   padding: 10px;
-  margin: 0;
+  list-style-type: none;
 }
 
-.game-info-container p {
+.game-info-container p,
+.info-box-content ul {
   background-color: rgba(93, 93, 93)
 }
 

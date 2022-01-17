@@ -111,9 +111,7 @@ moles.forEach(mole => { //use querySelectAll to iterate through the moles and ad
 })
 
 
-
 // When the user clicks the About Button, open the info box
-
 infoButton.onclick = function () {
     infoBox.style.display = "block";
 }
