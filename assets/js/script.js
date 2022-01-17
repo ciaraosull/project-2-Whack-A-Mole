@@ -1,17 +1,18 @@
-//Declare variables
+//Declare Game Variables
 const hole = document.getElementsByClassName("hole");
-let gameOver = false;
 const moles = document.querySelectorAll('.mole');
+let gameOver = false;
 let displayScore = document.getElementById("molesHit");
 let score = 0;
-let infoBox = document.getElementById("infoModalBox");
-let infoButton = document.getElementById("game-instructions");
-let closeSpan = document.getElementsByClassName("close")[0];
+
+//Declare About Button - Game Instructions Pop Out Box Variables
+const infoBox = document.getElementById("infoModalBox");
+const infoButton = document.getElementById("game-instructions");
+const closeSpan = document.getElementsByClassName("close")[0];
 
 
 //Add event listener DOM load before running game- code to be executed when page has finished loading
 //Add event listener added to button elements - code to be executed when user clicks button
-
 document.addEventListener("DOMContentLoaded", function () {
     let button = document.getElementById("playButton");
 
@@ -57,15 +58,15 @@ function peek() {
 }
 
 /**
- * function onclick of play button
+ * function onclick of Play Button
  */
 function playGame() {
     gameOver = false; //to reset game on start
     displayScore.textContent = 0; //reset scoreboard to 0 on play again
-    score = 0;//reset score counter on play again
+    score = 0; //reset score counter on play again
     document.getElementById("time-up-alert").style.visibility = "hidden"; //hide time-up message on game start & play again
     document.getElementById("time-left").style.visibility = "visible"; //show countdown timer on game start & play again
-    document.getElementById("scoreboard").style.backgroundColor = "rgba(93, 93, 93)";//reset scoreboard background colour
+    document.getElementById("scoreboard").style.backgroundColor = "rgba(93, 93, 93)"; //reset scoreboard background colour
     timeLeft(20); //to pass 20 through the timer function below called timeLeft()
     peek();
     peek(); //running twice makes moles pop up in several locations at same time so harder
@@ -92,16 +93,16 @@ function timeLeft(i) {
     }, 1000); //counts down the number 1 second in the setInterval for countDown variable
 }
 
-moles.forEach(mole => {//use querySelectAll to iterate through the moles and add a click event to each
-    mole.addEventListener("click", function() {
+moles.forEach(mole => { //use querySelectAll to iterate through the moles and add a click event to each
+    mole.addEventListener("click", function () {
 
-        score ++; //increase the score on every mole click
-        displayScore.textContent = score;//add the score text to the score display
+        score++; //increase the score on every mole click
+        displayScore.textContent = score; //add the score text to the score display
 
         mole.style.backgroundImage = "url('assets/images/mole-whacked-image.png')";
         setTimeout(function () {
-            mole.style.backgroundImage = "url('assets/images/mole-image.png')"; 
-        }, 800);//changes mole pic on click for short time to rechange on next pop up
+            mole.style.backgroundImage = "url('assets/images/mole-image.png')";
+        }, 800); //changes mole pic on click for short time to rechange on next pop up
 
         //Add this to remove moles after click? //or is there a way to disable click for a short time to prevent reclicking??
         //let moleHit = document.querySelector(".hole.up") //assign variable to any mole that is up out of hole
@@ -111,24 +112,20 @@ moles.forEach(mole => {//use querySelectAll to iterate through the moles and add
 
 
 
-// When the user clicks the Info button, open the info box 
-infoButton.onclick = function() {
+// When the user clicks the About Button, open the info box
+
+infoButton.onclick = function () {
     infoBox.style.display = "block";
 }
 
 // When the user clicks on (x), close the info box
-closeSpan.onclick = function() {
+closeSpan.onclick = function () {
     infoBox.style.display = "none";
 }
 
 // When the user clicks anywhere outside of the info box, close it too
-window.onclick = function(event) {
-  if (event.target == infoBox) {
-    infoBox.style.display = "none";
-  }
+window.onclick = function (event) {
+    if (event.target == infoBox) {
+        infoBox.style.display = "none";
+    }
 }
-
-
-
-
-
