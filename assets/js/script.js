@@ -4,6 +4,9 @@ let gameOver = false;
 const moles = document.querySelectorAll('.mole');
 let displayScore = document.getElementById("molesHit");
 let score = 0;
+let infoBox = document.getElementById("infoModalBox");
+let infoButton = document.getElementById("game-instructions");
+let closeSpan = document.getElementsByClassName("close")[0];
 
 
 //Add event listener DOM load before running game- code to be executed when page has finished loading
@@ -93,21 +96,39 @@ function timeLeft(i) {
 
 moles.forEach(mole => {//use querySelectAll to iterate through the moles and add a click event to each
     mole.addEventListener("click", function() {
+
         score ++; //increase the score on every mole click
         displayScore.textContent = score;//add the score text to the score display
+
         mole.style.backgroundImage = "url('assets/images/mole-whacked-image.png')";
         setTimeout(function () {
             mole.style.backgroundImage = "url('assets/images/mole-image.png')"; 
-        }, 800);//changes mole pic on click but stays that way, does not change it back?
+        }, 800);//changes mole pic on click for short time to rechange on next pop up
 
-        
-        //Add this to remove moles after click
+        //Add this to remove moles after click?
         //let moleHit = document.querySelector(".hole.up") //assign variable to any mole that is up out of hole
         //moleHit.classList.remove("up"); //on click remove up to put mole back down after click
-        
-
     });
 })
+
+
+
+// When the user clicks the button, open the modal 
+infoButton.onclick = function() {
+    infoBox.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+closeSpan.onclick = function() {
+    infoBox.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == infoBox) {
+    infoBox.style.display = "none";
+  }
+}
 
 
 

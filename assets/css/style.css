@@ -43,8 +43,8 @@ h1 {
 }
 
 /* The Game Info Box Conetent (background) */
-.modal-info-box {
-  /*display: none;*/ /* Hidden by default */
+.modalInfoBox {
+  display: none; /* Hidden by default */
   position: fixed;
   z-index: 1; /* Sit on top */
   padding-top: 100px;
