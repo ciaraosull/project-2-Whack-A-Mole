@@ -92,8 +92,6 @@ function timeLeft(i) {
     }, 1000); //counts down the number 1 second in the setInterval for countDown variable
 }
 
-//take the moles lenght and iterate through to add click event to any time a mole is clicked
-
 moles.forEach(mole => {//use querySelectAll to iterate through the moles and add a click event to each
     mole.addEventListener("click", function() {
 
@@ -105,7 +103,7 @@ moles.forEach(mole => {//use querySelectAll to iterate through the moles and add
             mole.style.backgroundImage = "url('assets/images/mole-image.png')"; 
         }, 800);//changes mole pic on click for short time to rechange on next pop up
 
-        //Add this to remove moles after click?
+        //Add this to remove moles after click? //or is there a way to disable click for a short time to prevent reclicking??
         //let moleHit = document.querySelector(".hole.up") //assign variable to any mole that is up out of hole
         //moleHit.classList.remove("up"); //on click remove up to put mole back down after click
     });
@@ -113,17 +111,17 @@ moles.forEach(mole => {//use querySelectAll to iterate through the moles and add
 
 
 
-// When the user clicks the button, open the modal 
+// When the user clicks the Info button, open the info box 
 infoButton.onclick = function() {
     infoBox.style.display = "block";
 }
 
-// When the user clicks on <span> (x), close the modal
+// When the user clicks on (x), close the info box
 closeSpan.onclick = function() {
     infoBox.style.display = "none";
 }
 
-// When the user clicks anywhere outside of the modal, close it
+// When the user clicks anywhere outside of the info box, close it too
 window.onclick = function(event) {
   if (event.target == infoBox) {
     infoBox.style.display = "none";
