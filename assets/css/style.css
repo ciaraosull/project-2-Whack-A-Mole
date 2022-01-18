@@ -26,8 +26,8 @@ h1,
 h2 {
   color: brown;
   font-family: 'Bubblegum Sans', cursive;
-  font-size: 8vh;
-  margin: 0;
+  font-size: 7vh;
+  margin: 5px;
 }
 
 .game-controls {
@@ -177,6 +177,10 @@ h2 {
   .game-container {
     width: 80%;
   }
+
+  .game-info-container {
+    font-size: 2vh;
+  }
 }
 
 @media (min-width: 500px) {
@@ -199,5 +203,10 @@ h2 {
   .info-box-content ul,
   .game-info-container button {
     font-size: 4vh;
+  }
+
+  h1, h2 {
+    font-size: 10vh;
+    margin: 5px;
   }
 }
