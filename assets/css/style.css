@@ -3,7 +3,8 @@
 
 
 body {
-  box-sizing: border-box; /* to account for any border and padding values */
+  box-sizing: border-box;
+  /* to account for any border and padding values */
   margin: 0;
   padding: 0;
   border: none;
@@ -12,7 +13,8 @@ body {
 .backdrop {
   background: url("..//images/backdrop-image.png") center center no-repeat;
   background-size: cover;
-  background-color: lightblue; /* in case background image does not load */
+  background-color: lightblue;
+  /* in case background image does not load */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -20,17 +22,17 @@ body {
   text-align: center;
 }
 
-h1, h2 {
+h1,
+h2 {
   color: brown;
   font-family: 'Bubblegum Sans', cursive;
-  font-size: 3em;
+  font-size: 8vh;
   margin: 0;
 }
 
 .game-controls {
   display: flex;
   justify-content: space-evenly;
-
 }
 
 /*Game Info Box Button */
@@ -38,22 +40,26 @@ h1, h2 {
   border-radius: 10px;
   font-family: 'Roboto Mono', monospace;
   padding: 10px;
-  background-color: blue;
+  background-color: #004EFF;
   color: #fff;
 }
 
 /* The Game Info Box Conetent (background) */
 .modalInfoBox {
-  display: none; /* Hidden by default */
+  display: none;
+  /* Hidden by default */
   position: fixed;
-  z-index: 3; /* Sit on top */
+  z-index: 3;
+  /* Sit on top */
   padding-top: 100px;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  overflow: auto; /* Enable scroll */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black with opacity */
 }
 
 /* Game Info Box Content */
@@ -84,11 +90,11 @@ h1, h2 {
   display: flex;
   padding: 0 5px;
   justify-content: space-around;
-  font-size: 2vh;
+  font-size: 2.5vh;
 }
 
-.game-info-container p, 
-.info-box-content ul, 
+.game-info-container p,
+.info-box-content ul,
 .game-info-container button {
   border-radius: 10px;
   color: #fff;
@@ -104,14 +110,15 @@ h1, h2 {
 
 /*When time is up this displays */
 #time-up-alert {
-  background-color: red;
+  background-color: #ff160C;
   margin-left: -50%;
   visibility: hidden;
 }
 
 /*Play Button */
 .game-info-container button {
-  background-color: rgba(0, 100, 0);
+  background-color: #32CD32;
+  padding: 15px;
 }
 
 /*container to hold the moles & holes*/
@@ -122,13 +129,12 @@ h1, h2 {
   flex-wrap: wrap;
   top: 70%;
   flex-shrink: 0;
-  /*don't think this is needed???*/
   align-self: center;
 }
 
 .mole {
-  position: absolute;
   /* Use absolute content will not affect the dimensions of the hole*/
+  position: absolute;
   width: 50%;
   height: 60%;
   background: url("../images/mole-image.png") bottom no-repeat;
@@ -148,7 +154,7 @@ h1, h2 {
   /*reset stacking order so hole on top of mole but not on top of About Box when popped out */
   z-index: 2;
   overflow: hidden;
-  /*hides moles - don't think needed anymore?*/
+  /*hides moles if needed*/
 }
 
 /* To make this div a perfect responsive square the :after pseudo-element was used.  
@@ -182,14 +188,16 @@ h1, h2 {
     justify-content: space-around;
     font-size: 5vh;
   }
-
-  h1 {
-    font-size: 4em;
-  }
 }
 
 @media (min-width: 800px) {
   .hole {
     width: 25%;
+  }
+
+  .game-info-container p,
+  .info-box-content ul,
+  .game-info-container button {
+    font-size: 4vh;
   }
 }
