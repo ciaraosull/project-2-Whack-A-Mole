@@ -3,8 +3,8 @@
 
 
 body {
-  box-sizing: border-box;
   /* to account for any border and padding values */
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   border: none;
@@ -13,8 +13,8 @@ body {
 .backdrop {
   background: url("..//images/backdrop-image.png") center center no-repeat;
   background-size: cover;
-  background-color: lightblue;
   /* in case background image does not load */
+  background-color: lightblue;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -27,7 +27,7 @@ h2 {
   color: brown;
   font-family: 'Bubblegum Sans', cursive;
   font-size: 7vh;
-  margin: 5px;
+  margin: 0 5px;
 }
 
 .game-controls {
@@ -50,20 +50,20 @@ h2 {
 
 /* The Game Info Box Conetent (background) */
 .modalInfoBox {
-  display: none;
   /* Hidden by default */
+  display: none;
   position: fixed;
-  z-index: 3;
   /* Sit on top */
+  z-index: 3;
   padding-top: 100px;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  overflow: auto;
   /* Enable scroll if needed */
-  background-color: rgba(0, 0, 0, 0.4);
-  /* Black with opacity */
+  overflow: auto;
+   /* Black with opacity */
+   background-color: rgba(0, 0, 0, 0.4);
 }
 
 /* Game Info Box Content */
@@ -122,7 +122,6 @@ h2 {
 /*Play Button */
 .game-info-container button {
   background-color: #32CD32;
-  padding: 15px;
 }
 
 button:hover {
@@ -162,8 +161,8 @@ button:hover {
   padding: 0 5px;
   /*reset stacking order so hole on top of mole but not on top of About Box when popped out */
   z-index: 2;
-  overflow: hidden;
   /*hides moles if needed*/
+  overflow: hidden;
 }
 
 /* To make this div a perfect responsive square the :after pseudo-element was used.  
