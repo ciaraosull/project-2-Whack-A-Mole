@@ -44,6 +44,10 @@ h2 {
   color: #fff;
 }
 
+#game-instructions:hover {
+  background-color: #00008B;
+}
+
 /* The Game Info Box Conetent (background) */
 .modalInfoBox {
   display: none;
@@ -119,6 +123,10 @@ h2 {
 .game-info-container button {
   background-color: #32CD32;
   padding: 15px;
+}
+
+button:hover {
+  background-color: #006400;
 }
 
 /*container to hold the moles & holes*/
