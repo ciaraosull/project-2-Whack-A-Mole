@@ -130,6 +130,7 @@ h2 {
   top: 70%;
   flex-shrink: 0;
   align-self: center;
+  padding-bottom: 20px;
 }
 
 .mole {
