@@ -1,25 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <meta name="description"
+        content="Whack-A-Mole: Have fun with this free online game.  Test your speed of processing skills and try improve your score each time.">
+    <meta name="keywords"
+        content="Whack-A-Mole, online game, free game, speed of processing skills, reaction time, accuracy, fun game for kids and adults.">
+    <meta name="author" content="Ciara O'Sullivan">
+
     <!-- Link to Stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
 
+    <!-- Link to Fontawesome -->
+    <script src="https://kit.fontawesome.com/b83175b9a4.js" crossorigin="anonymous"></script>
+
+    <!-- Link for Favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico" />
 
     <title>Whack-A-Mole</title>
 </head>
+
 <body>
-    <a href="game.html" aria-label="Go to the game page">
-        <h2>Test Game Page Link</h2>
-    </a>
+    <!--Background image & container-->
+    <section class="backdrop">
 
-    <h1>Test css & js links</h1>
+        <!--Heading-->
+        <h1>Whack-A-Mole</h1>
 
-    <!-- Link to Javascript -->
-    <script src= "assets/js/script.js"></script>
-    
+        <div class="game-info-container">
+
+            <section class="game-controls">
+                <!-- Game Information Button for Pop Out Modal Box -->
+                <button id="game-instructions" type="button" aria-label="Click to Open Game Instructions">
+                    <!--Fontawesome Icons for Home Button -->
+                    <i class="fas fa-info-circle"></i> About
+                </button>
+
+                <div id="infoModalBox" class="modalInfoBox">
+                    <!-- Game Info Pop Out Modal Box Content -->
+                    <div class="info-box-content">
+                        <span class="close">&times;</span>
+                        <h2>How To Play</h2>
+                        <ul>
+                            <li>On a desktop computer, use your mouse to click on the moles.</li><br>
+                            <li>On a mobile device, tap the moles.</li><br>
+                            <li>This is a timed game.</li><br>
+                            <li>For every mole you hit you will score 1 point.</li><br>
+                            <li>You have 20 seconds to whack as many moles as you can!</li><br>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Play button -->
+            <button type="button" aria-label="Play Button" id="playButton">
+                <!-- Link to Fontawesome icon for Play -->
+                <i class="fas fa-play"></i> <span id="playButton-text">Play</span>
+            </button>
+        </div>
+
+        <div class="game-info-container">
+            <!-- Game Timer -->
+            <p id="time-left">Time Left: <span id="timer">20</span></p>
+            <p id="time-up-alert">Time Up</p>
+
+            <!-- Scoreboard -->
+            <p id="scoreboard">Your Score: <span id="molesHit">0</span></p>
+        </div>
+
+        <!-- Holes & Moles Area -->
+        <div class="game-container">
+            <div class="hole hole1">
+                <div class="mole"></div>
+            </div>
+
+            <div class="hole hole2">
+                <div class="mole"></div>
+            </div>
+
+            <div class="hole hole3">
+                <div class="mole"></div>
+            </div>
+
+            <div class="hole hole4">
+                <div class="mole"></div>
+            </div>
+
+            <div class="hole hole5">
+                <div class="mole"></div>
+            </div>
+
+            <div class="hole hole6">
+                <div class="mole"></div>
+            </div>
+        </div>
+
+        <!-- Link to Javascript -->
+        <script src="assets/js/script.js"></script>
+    </section>
 </body>
+
 </html>
