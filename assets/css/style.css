@@ -177,10 +177,6 @@ h2 {
   .game-container {
     width: 80%;
   }
-
-  .game-info-container {
-    font-size: 2vh;
-  }
 }
 
 @media (min-width: 500px) {
