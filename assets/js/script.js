@@ -5,7 +5,7 @@ let gameOver = false;
 let displayScore = document.getElementById("molesHit");
 let score = 0;
 
-//Declare About Button - Game Instructions Pop Out Box Variables
+//Declare About Button Variables - Game Instructions Pop Out (Modal) Box
 const infoBox = document.getElementById("infoModalBox");
 const infoButton = document.getElementById("game-instructions");
 const closeSpan = document.getElementsByClassName("close")[0];
@@ -109,7 +109,6 @@ moles.forEach(mole => { //use querySelectAll to iterate through the moles and ad
         //moleHit.classList.remove("up"); //on click remove up to put mole back down after click
     });
 })
-
 
 // When the user clicks the About Button, open the info box
 infoButton.onclick = function () {
