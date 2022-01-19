@@ -115,8 +115,11 @@ h2 {
 /*When time is up this displays */
 #time-up-alert {
   background-color: #ff160C;
-  margin-left: -50%;
-  visibility: hidden;
+  display: none;
+}
+
+#time-left {
+  display:block;
 }
 
 /*Play Button */

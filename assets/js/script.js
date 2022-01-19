@@ -3,7 +3,6 @@ const hole = document.getElementsByClassName("hole");
 const moles = document.querySelectorAll('.mole');
 let gameOver = false;
 let displayScore = document.getElementById("molesHit");
-let score = 0;
 
 //Declare About Button Variables - Game Instructions Pop Out (Modal) Box
 const infoBox = document.getElementById("infoModalBox");
@@ -64,8 +63,8 @@ function playGame() {
     gameOver = false; //to reset game on start
     displayScore.textContent = 0; //reset scoreboard to 0 on play again
     score = 0; //reset score counter on play again
-    document.getElementById("time-up-alert").style.visibility = "hidden"; //hide time-up message on game start & play again
-    document.getElementById("time-left").style.visibility = "visible"; //show countdown timer on game start & play again
+    document.getElementById("time-up-alert").style.display = "none"; //hide time-up message on game start & play again
+    document.getElementById("time-left").style.display = "block"; //show countdown timer on game start & play again
     document.getElementById("scoreboard").style.backgroundColor = "rgba(93, 93, 93)"; //reset scoreboard background colour
     timeLeft(20); //to pass 20 through the timer function below called timeLeft()
     peek();
@@ -85,14 +84,19 @@ function timeLeft(i) {
         i--;
         if (i === -1) {
             clearInterval(countDown) //if statement for what to do when timer gets to 0 and game is over
-            document.getElementById("time-up-alert").style.visibility = "visible"; //hide time-up message on game start & play again
-            document.getElementById("time-left").style.visibility = "hidden"; //show countdown timer on game start & play again
+            document.getElementById("time-up-alert").style.display = "block"; //hide time-up message on game start & play again
+            document.getElementById("time-left").style.display = "none"; //show countdown timer on game start & play again
             document.getElementById("playButton-text").innerHTML = "Play Again"; //change the Play button text to play again
             document.getElementById("scoreboard").style.backgroundColor = "red";
         }
     }, 1000); //counts down the number 1 second in the setInterval for countDown variable
 }
 
+/**
+ * iterate through the array of moles, 
+ * add click event to increase score 
+ * & change background image on hit
+ */
 moles.forEach(mole => { //use querySelectAll to iterate through the moles and add a click event to each
     mole.addEventListener("click", function () {
 
@@ -100,13 +104,10 @@ moles.forEach(mole => { //use querySelectAll to iterate through the moles and ad
         displayScore.textContent = score; //add the score text to the score display
 
         mole.style.backgroundImage = "url('assets/images/mole-whacked-image.png')";
+        
         setTimeout(function () {
             mole.style.backgroundImage = "url('assets/images/mole-image.png')";
         }, 800); //changes mole pic on click for short time to rechange on next pop up
-
-        //Add this to remove moles after click? //or is there a way to disable click for a short time to prevent reclicking??
-        //let moleHit = document.querySelector(".hole.up") //assign variable to any mole that is up out of hole
-        //moleHit.classList.remove("up"); //on click remove up to put mole back down after click
     });
 })
 
