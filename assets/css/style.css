@@ -165,6 +165,10 @@ button:hover {
   overflow: hidden;
 }
 
+#mallet-cursor-area {
+  cursor: url("../images/hammer-image.png") 75 75, auto;
+}
+
 /* To make this div a perfect responsive square the :after pseudo-element was used.  
   By adding an empty :after element to this square div and set padding-bottom: 100%:*/
 .hole:after {
