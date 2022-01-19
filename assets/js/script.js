@@ -1,7 +1,7 @@
 //Declare Game Variables
 const hole = document.getElementsByClassName("hole");
 const moles = document.querySelectorAll('.mole');
-let gameOver = false;
+//let gameOver = false;
 let displayScore = document.getElementById("molesHit");
 
 //Declare About Button Variables - Game Instructions Pop Out (Modal) Box
