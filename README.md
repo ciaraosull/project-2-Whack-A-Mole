@@ -98,13 +98,19 @@ Before testing, code was checked and formatted by right clicking and choosing - 
 
 1. The [W3C](https://validator.w3.org/) site was used to validate the **HTML** code.
 
-    It returned 5 errors on the index.html page all stating that the break tag cannot be used within a list.  The break points used were removed and to add spacing the list items were targeted in CSS with padding instead.  The validator was rerun and came back clear.  
+    It returned 5 errors on the index.html page all stating that the break tag cannot be used within a list.  
+    
+    ![HTML Validator Results](assets/images/html-errors-screenshot.png)
+    
+    The break points used were removed and to add spacing the list items were targeted in CSS with padding instead.  The validator was rerun and came back clear.
+
+    ![HTML Validator Results After Debug](assets/images/html-final-screenshot.png)
 
 
 2. The [W3C](https://jigsaw.w3.org/css-validator/) site was also used to validate the **CSS** code.  It returned no errors on the style.css file.
 
 
-    ![CSS Validator Results](assets/images/css-validator-screenshot.png)
+    ![CSS Validator Results](assets/images/css-screenshot.png)
 
 3. Jshint? 
 
