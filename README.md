@@ -112,7 +112,14 @@ Before testing, code was checked and formatted by right clicking and choosing - 
 
     ![CSS Validator Results](assets/images/css-screenshot.png)
 
-3. Jshint? 
+3. [JSHint](https://jshint.com/) site was used to validate the **JavaScript** code. It returned errors with semi-colons missing and also, 2 variables that had been declared were removed in error and this showed up in JSHint.
+
+    ![JSHint Results](assets/images/jshint-warnings-screenshot.png)
+
+    The semi-colons were put in the correct place and the 2 missing variables were defined again.  JSHint then revealed no errors or warnings.
+
+    ![JSHint Final Results](assets/images/jshint-final-screenshot.png)
+
 
 4. **Lighthouse** was accessed through Developer Tools in Chrome to check the site for performance, acessibility, best practice and SEO.   
 
