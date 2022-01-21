@@ -109,7 +109,7 @@ h2 {
 
 .game-info-container p,
 .info-box-content ul {
-  background-color: rgba(93, 93, 93)
+  background-color: #5d5d5d;
 }
 
 /*When time is up this displays */
