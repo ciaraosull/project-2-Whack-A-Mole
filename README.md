@@ -127,45 +127,41 @@ Before testing, code was checked and formatted by right clicking and choosing - 
 
     ![Lighthouse Results](assets/images/lighthouse-screenshot.png)
 
-
-
-
-
 ## Deployment
 The site was deployed to GitHub pages. The steps to deploy are as follows:
 
-In the GitHub repository, navigate to the Settings tab.
+* In the GitHub repository, navigate to the Settings tab.
 
-On the left hand side menu, choose Pages.
+* On the left hand side menu, choose Pages.
 
-From the source section drop-down menu, select the Main branch and then press Save.
+* From the source section drop-down menu, select the Main branch and then press Save.
 
-The next page will displlay a notice stating the site is ready to be published.
+* The next page will displlay a notice stating the site is ready to be published. 
 
-Refresh GitHub and the display will now state the site is published.
+* Refresh GitHub and the display will now state the site is published.
 
-The live link is: https://ciaraosull.github.io/project-2-whack-a-mole/
+The live link is: https://ciaraosull.github.io/project-2-whack-a-mole/index.html
 
-Visual Studio (VS) Code was the Integrated Development Environment used to develop this website.
+* Visual Studio (VS) Code was the Integrated Development Environment used to develop this ebsite.
 
-**Version Control**
-Git was used as the version control software. Commands such as git add ., git status, git commit and git push were used to add, save, stage and push the code to the GitHub repository where the source code is stored.
+### Version Control
+* Git was used as the version control software.  Commands such as git add ., git status, git commit and git push were used to add, save, stage and push the code to the GitHub repository where the source code is stored.
 
-**Cloning**
+### Cloning
+To clone this repository from [GitHub](www.github.com) to a local computer to make it easier to fix merge conflicts, add or remove files, and push larger commits or contribute use the following steps:
 
-To clone this repository from GitHub to a local computer to make it easier to fix merge conflicts, add or remove files, and push larger commits or contribute use the following steps:
+1. On [GitHub](www.github.com), navigate to the main page of the repository.  [Click Here for Reposititory Link](https://github.com/ciaraosull/project-2-whack-a-mole)
 
-On GitHub, navigate to the main page of the repository. Click Here for Reposititory Link
+2. Above the list of files, click Code.
 
-Above the list of files, click Code.
+3. click Use GitHub CLI, then the copy icon.
 
-click Use GitHub CLI, then the copy icon.
+4. Open Git Bash and change the current working directory to the location where you want the cloned directory.
 
-Open Git Bash and change the current working directory to the location where you want the cloned directory.
+5. Type git clone, and then paste the URL that was copied from step 3 above.
 
-Type git clone, and then paste the URL that was copied from step 3 above.
+6. Press Enter to create the local clone.
 
-Press Enter to create the local clone.
 
 ## Credits
 **Content**
