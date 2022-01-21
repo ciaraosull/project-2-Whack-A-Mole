@@ -137,11 +137,11 @@ Before testing, code was checked and formatted by right clicking and choosing - 
 
     ![CSS Validator Results](assets/images/css-screenshot.png)
 
-3. [JSHint](https://jshint.com/) site was used to validate the **JavaScript** code. It returned errors with semi-colons missing and also, 2 variables that had been declared were removed in error and this showed up in JSHint.
+3. [JSHint](https://jshint.com/) site was used to validate the **JavaScript** code. It returned errors with semi-colons missing and also, 2 variables were reported to not be declared.
 
     ![JSHint Results](assets/images/jshint-warnings-screenshot.png)
 
-    The semi-colons were put in the correct place and the 2 missing variables were defined again.  JSHint then revealed no errors or warnings.
+    The semi-colons were put in the correct place and the 2 undeclared variables were defined globally.  Given more time, if this happened for future projects, more time could be spent on designing these variables to avoid creating them globally.  JSHint then revealed no errors or warnings.
 
     ![JSHint Final Results](assets/images/jshint-final-screenshot.png)
 
@@ -233,7 +233,7 @@ This site was made possible due to the help, advice and support of my Code Insti
 ## Continued Professional Development
 During the design phase of this project, ideas were sketched out with paper and pencil.  My goal is to learn how to use Balsamiq WireFrames in order to implement this as a method of designing future projects.
 
-I would like to learn more about scoping and practice avoiding creating global variables.  While I was mindful of avoiding this during the project development I still feel I need more practice. 
+I would like to learn more about scoping and practice avoiding creating global variables.  While I was mindful of avoiding this during the project development I still feel I would like more practice. 
 
 
 
