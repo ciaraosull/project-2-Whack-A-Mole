@@ -1,23 +1,39 @@
 //Declare Game Variables
 const hole = document.getElementsByClassName("hole");
 const moles = document.querySelectorAll('.mole');
-//let gameOver = false;
 let displayScore = document.getElementById("molesHit");
 
-//Declare About Button Variables - Game Instructions Pop Out (Modal) Box
-const infoBox = document.getElementById("infoModalBox");
-const infoButton = document.getElementById("game-instructions");
-const closeSpan = document.getElementsByClassName("close")[0];
 
-
-//Add event listener DOM load before running game- code to be executed when page has finished loading
-//Add event listener added to button elements - code to be executed when user clicks button
+//Add event listeners DOM load before running game- code to be executed when page has finished loading
 document.addEventListener("DOMContentLoaded", function () {
-    let button = document.getElementById("playButton");
 
+    //runs the playGame function below when user clicks the play button
+    let button = document.getElementById("playButton");
     button.addEventListener("click", function () {
-        playGame() //runs the playGame function below when user clicks the play button
+        playGame()
     });
+
+    //Declare About Button Variables - Game Instructions Pop Out (Modal) Box
+    const infoBox = document.getElementById("infoModalBox");
+    const infoButton = document.getElementById("game-instructions");
+    const closeSpan = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the About Button, open the info box
+    infoButton.onclick = function () {
+        infoBox.style.display = "block";
+    }
+
+    // When the user clicks on (x), close the info box
+    closeSpan.onclick = function () {
+        infoBox.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the info box, close it too
+    window.onclick = function (event) {
+        if (event.target === infoBox) {
+            infoBox.style.display = "none";
+        }
+    }
 })
 
 /**
@@ -104,26 +120,9 @@ moles.forEach(mole => { //use querySelectAll to iterate through the moles and ad
         displayScore.textContent = score; //add the score text to the score display
 
         mole.style.backgroundImage = "url('assets/images/mole-whacked-image.png')";
-        
+
         setTimeout(function () {
             mole.style.backgroundImage = "url('assets/images/mole-image.png')";
         }, 800); //changes mole pic on click for short time to rechange on next pop up
     });
 })
-
-// When the user clicks the About Button, open the info box
-infoButton.onclick = function () {
-    infoBox.style.display = "block";
-}
-
-// When the user clicks on (x), close the info box
-closeSpan.onclick = function () {
-    infoBox.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the info box, close it too
-window.onclick = function (event) {
-    if (event.target == infoBox) {
-        infoBox.style.display = "none";
-    }
-}
