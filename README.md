@@ -4,7 +4,7 @@
 
 
 
-![Whack-A-Mole - Am I Responsive](assets/images/mindfulness-screenshots.png)
+![Whack-A-Mole - Am I Responsive](assets/images/responsive-screenshots.png)
 
 # **User Experience (UX)**
 **User Stories**
