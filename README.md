@@ -75,7 +75,7 @@ HTML, CSS, JavaScript
 
 *   After each function was written it was tested using these methods mentioned above before moving on.  This helped keep tracking down issues and bugs to a minimum.
 
-*   After deployment all features were checked on laptop, mobile (Samsung Galaxy & iPhone 8). The site was sent to peers to check from their devices that all features functioned correctly and feedback on responsiveness and functionality was positive across all devices checked such as PC, Laptop, Tablets and Mobiles (Android & IOS). The website was checked on Chrome, Firefox and Edge.  It was also check by a user in Internet Explorer 7.  (Click here for issue 3 [below](##3.-Internet-Explorer-7-Background-Colour) in the Interesting Issues, Bugs Found & Fixed section).
+*   After deployment all features were checked on laptop, mobile (Samsung Galaxy & iPhone 8). The site was sent to peers to check from their devices that all features functioned correctly and feedback on responsiveness and functionality was positive across all devices checked such as PC, Laptop, Tablets and Mobiles (Android & IOS). The website was checked on Chrome, Firefox and Edge.  It was also check by a user in Internet Explorer 7.  (Click here for issue 3 [below](##3-.-Internet-Explorer-7-Background-Colour) in the Interesting Issues, Bugs Found & Fixed section).
 
 *   The About button was tested to ensure it changed colour on hover and that it functioned on click to open the How to Play Modal Box.
 
