@@ -121,9 +121,13 @@ Before testing, code was checked and formatted by right clicking and choosing - 
     ![JSHint Final Results](assets/images/jshint-final-screenshot.png)
 
 
-4. **Lighthouse** was accessed through Developer Tools in Chrome to check the site for performance, acessibility, best practice and SEO.   
+4. **Lighthouse** was accessed through Developer Tools in Chrome to check the site for performance, accessibility, best practice, and SEO.  The test was done **incognito** window to account for extensions on the testing laptop etc. 
 
-![Lighthouse Results](assets/images/lighthouse-screenshot.png)
+    The first time this was run, the accessibility returned a recommendation to change the contrast on the Play Button background a foreground.  A slightly darker shade of green was used instead to give more contrast to the white Play writing.  Lighthouse was checked again, and accessibility returned 100% this time.
+
+    ![Lighthouse Results](assets/images/lighthouse-screenshot.png)
+
+
 
 
 
