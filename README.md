@@ -70,7 +70,29 @@ The design of the site was inspired by researching other online games to discove
 HTML, CSS, JavaScript
 
 ## Testing
-Testingmmmmmmm
+After deployment all features were checked on laptop, mobile (Samsung Galaxy & iPhone 8). The site was sent to peers to check from their devices that all features functioned correctly and feedback on responsiveness and functionality was positive across all devices checked such as PC, Laptop, Tablets and Mobiles (Android & IOS). The website was checked on Chrome, Firefox and Edge.
+
+The About and Play buttons were tested that they changed colour on hover and that they functioned on click.
+
+The About Modal Box was also tested.  The X to close in the righthand corner changed colour when hovered over and also closed the box when clicked.  Also, tested was if a user clicked anywhere outside the box, this would also close it.  This box was also tested that it opened during game play incase the user needs to check the instructions after the game starts.  All this functioned as expected.
+
+
+
+The explore button on the home page was checked that it linked to the About Us Section.
+
+The audio session on the Practice Section was also checked, that it did not play until the user pressed it. That it was a clear recording with volume control too.
+
+The form was checked that name and email were required, that the radio buttons yes and no functioned and that the submit button took the user to the thank you page.
+
+Each link in the footer for the Contact Us Section was checked that it open the correct link and in a separate tab.
+
+The Thank You page header and footer was also checked. The header links took the user back to the corresponding sections of the main page and the footer links took the user to the corresponding external links opening in a new tab.
+
+The Page not Found 404.html was also checked by entering in a mistake in the url bar. Once taken to the 404 page the link there was checked that it took the user back to the main site.
+
+Google Chrome's built in Developer Tool was used to inspect page elements throughout the build and helped debug issues within the HTML code and CSS styles.
+
+The README.md was proof-read and all links were checked before final submission.
 
 ### **Interesting Issues, Bugs Found & Fixed**
 
