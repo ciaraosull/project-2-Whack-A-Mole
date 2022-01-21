@@ -104,7 +104,13 @@ h2 {
   color: #fff;
   font-family: 'Roboto Mono', monospace;
   padding: 10px;
+}
+
+/*Instructions inside About Box*/
+li {
+  text-align: left;
   list-style-type: none;
+  padding: 20px;
 }
 
 .game-info-container p,
