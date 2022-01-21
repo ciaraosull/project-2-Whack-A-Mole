@@ -1,8 +1,9 @@
 //Declare Game Variables
 const hole = document.getElementsByClassName("hole");
 const moles = document.querySelectorAll('.mole');
-let displayScore = document.getElementById("molesHit");
 let gameOver = false;
+let score = 0;
+let displayScore = document.getElementById("molesHit");
 
 
 //Add event listeners DOM load before running game- code to be executed when page has finished loading
@@ -100,7 +101,7 @@ function timeLeft(i) {
         document.getElementById("timer").innerHTML = i; //access the timer html text to display the number counting down
         i--;
         if (i === -1) {
-            clearInterval(countDown) //if statement for what to do when timer gets to 0 and game is over
+            clearInterval(countDown); //if statement for what to do when timer gets to 0 and game is over
             document.getElementById("time-up-alert").style.display = "block"; //hide time-up message on game start & play again
             document.getElementById("time-left").style.display = "none"; //show countdown timer on game start & play again
             document.getElementById("playButton-text").innerHTML = "Play Again"; //change the Play button text to play again
@@ -126,4 +127,4 @@ moles.forEach(mole => { //use querySelectAll to iterate through the moles and ad
             mole.style.backgroundImage = "url('assets/images/mole-image.png')";
         }, 800); //changes mole pic on click for short time to rechange on next pop up
     });
-})
+});
