@@ -70,31 +70,32 @@ The design of the site was inspired by researching other online games to discove
 HTML, CSS, JavaScript
 
 ## Testing
-After deployment all features were checked on laptop, mobile (Samsung Galaxy & iPhone 8). The site was sent to peers to check from their devices that all features functioned correctly and feedback on responsiveness and functionality was positive across all devices checked such as PC, Laptop, Tablets and Mobiles (Android & IOS). The website was checked on Chrome, Firefox and Edge.
 
-The About and Play buttons were tested that they changed colour on hover and that they functioned on click.
+*   Methods such as testing by clicking, hovering and Chrome Developer Tools during this project's development were used test for bugs in the HTML, CSS and JS code.  The Elements section was used for the HTML & CSS.  The Console was used to check the JS.  Any errors or warnings were fixed as they appeared.  Use of console.log() and alert() as the code was written helped check everything was behaving as expected and functions such as random whole numbers or random holes were being generated correctly.  
 
-The About Modal Box was also tested.  The X to close in the righthand corner changed colour when hovered over and also closed the box when clicked.  Also, tested was if a user clicked anywhere outside the box, this would also close it.  This box was also tested that it opened during game play incase the user needs to check the instructions after the game starts.  All this functioned as expected.
+*   After each function was written it was tested using these methods mentioned above before moving on.  This helped keep tracking down issues and bugs to a minimum.
 
+*   After deployment all features were checked on laptop, mobile (Samsung Galaxy & iPhone 8). The site was sent to peers to check from their devices that all features functioned correctly and feedback on responsiveness and functionality was positive across all devices checked such as PC, Laptop, Tablets and Mobiles (Android & IOS). The website was checked on Chrome, Firefox and Edge.  It was also check by a user in Internet Explorer 7.  (Click here for issue 3 [below](##3.-Internet-Explorer-7-Background-Colour) in the Interesting Issues, Bugs Found & Fixed section).
 
+*   The About button was tested to ensure it changed colour on hover and that it functioned on click to open the How to Play Modal Box.
 
-The explore button on the home page was checked that it linked to the About Us Section.
+*   The How to Play Modal Box was also tested.  The X to close in the righthand corner changed colour when hovered over and also closed the box when clicked.  Also, tested was if a user clicked anywhere outside the box, this would also close it.  This box was tested to ensure that it opened during game play incase the user needs to check the instructions after the game starts.  All this functioned as expected.
 
-The audio session on the Practice Section was also checked, that it did not play until the user pressed it. That it was a clear recording with volume control too.
+*   The Play button was tested to ensure it changed colour on hover and that it functioned on click to start the game.  It was tested to check it was disabled during game play but enabled and changed to Play Again once the game play was over.
 
-The form was checked that name and email were required, that the radio buttons yes and no functioned and that the submit button took the user to the thank you page.
+*   The Time Left indicator was checked that it started at 20 before game started and that it counted down to 0 before game was over.  Also checked was that the Time Left indicator changed to Time Up when it reached 0 and the background changed colour.  If Play Again was chosen by the user it was checked that Time Left Indicator displayed again and functioned accordinly.
 
-Each link in the footer for the Contact Us Section was checked that it open the correct link and in a separate tab.
+*   The Score indicator was tested to ensure that on each correct hit / click of a mole it increased by 1.  This was checked to ensure it changed colour and displayed the correct final score when the game time was up.  Also, tested was that on Play Again, the Score reset back to 0.
 
-The Thank You page header and footer was also checked. The header links took the user back to the corresponding sections of the main page and the footer links took the user to the corresponding external links opening in a new tab.
+*   The moles were checked that they were not visible before the Play / Play Again button was clicked.  Testing that moles appeared from a random hole for a random time before disappearing.  Also, the moles were checked that they responded when clicked and that the image of the mole changed on a successful hit.  After successful hit image was triggered, it was checked that when the moles reappeared the original mole image could be seen.  By clicking on other parts of the page such as the holes or background it was tested that this did not respond as a mole hit and only the mole image itself being clicked was a succeful hit on click.
 
-The Page not Found 404.html was also checked by entering in a mistake in the url bar. Once taken to the 404 page the link there was checked that it took the user back to the main site.
+*   For Desktop the cursor image was checked that the mallet image only appeared around the hole and mole section of the game and turned back into a regular arrow image on the other sections of the page.  The coordinates at which the pointer clicked was checked that it was in line visually with the flat part of the mallet image.
 
-Google Chrome's built in Developer Tool was used to inspect page elements throughout the build and helped debug issues within the HTML code and CSS styles.
+*   The Page not Found 404.html was also checked by entering in a mistake in the url bar. Once taken to the 404 page the link there was checked that it took the user back to the main site.
 
-The README.md was proof-read and all links were checked before final submission.
+*   The README.md was proof-read and all links were checked before final submission.
 
-### **Interesting Issues, Bugs Found & Fixed**
+### Interesting Issues, Bugs Found & Fixed
 
 **1. Clicking on Mole Bug**
 
@@ -112,6 +113,11 @@ Three issues arose while trying to impliment addEventListener to the moles.  Thi
 * Interestingly though, by discovering this bug, running the Peek Function twice simultainiously gave the effect of more than one mole peeking out at a time.
 
 * The Play button was disabled during game play to fix this error, however, the Peek Function was placed in the game twice to keep this very nice effect.  Any more than running Peek twice at any one time, however, just made all the moles pop up almost at the same time constantly.
+
+**3. Internet Explorer 7 Background Colour**
+*   An issue arose for one user who chose to play the game on a PC that had Internet Explorer 7.  Game functionality worked as expected and all styling showed except for 1 section that used rgba for a colour choice.  The Time Left, Score and How to Play content all used this rgba gray colour and they did not display at all.  There was the option to insert a fallback colour as suggested by this [CSS Tricks article](https://css-tricks.com/ie-background-rgb-bug/), however, as hex values were already being used throughout, it was decided just to change this to hex instead as a fix. (
+    
+(Click [here](#Testing) to go back to the start of Testing Section if needed).
 
 
 ### Validator Testing
