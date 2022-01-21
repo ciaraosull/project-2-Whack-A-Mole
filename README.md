@@ -71,11 +71,11 @@ HTML, CSS, JavaScript
 
 ## Testing
 
-*   Methods such as testing by clicking, hovering and Chrome Developer Tools during this project's development were used test for bugs in the HTML, CSS and JS code.  The Elements section was used for the HTML & CSS.  The Console was used to check the JS.  Any errors or warnings were fixed as they appeared.  Use of console.log() and alert() as the code was written helped check everything was behaving as expected and functions such as random whole numbers or random holes were being generated correctly.  
+*   Methods such as testing by clicking, hovering and Chrome Developer Tools during this project's development were used to test for bugs in the HTML, CSS and JS code.  The Elements section was used for the HTML & CSS.  The Console was used to check the JS.  Any errors or warnings were fixed as they appeared.  Use of console.log() and for click events, alert(), were used as the code was written helped check everything was behaving as expected and functions such as random whole numbers or random holes were being generated correctly.  
 
 *   After each function was written it was tested using these methods mentioned above before moving on.  This helped keep tracking down issues and bugs to a minimum.
 
-*   After deployment all features were checked on laptop, mobile (Samsung Galaxy & iPhone 8). The site was sent to peers to check from their devices that all features functioned correctly and feedback on responsiveness and functionality was positive across all devices checked such as PC, Laptop, Tablets and Mobiles (Android & IOS). The website was checked on Chrome, Firefox and Edge.  It was also check by a user in Internet Explorer 7.  (Click here for issue 3 [below](#internet-explorer-7-background-colour) in the Interesting Issues, Bugs Found & Fixed section).
+*   After deployment all features were checked on laptop, mobile (Samsung Galaxy & iPhone 8). The site was sent to peers to check from their devices that all features functioned correctly and feedback on responsiveness and functionality was positive across all devices checked such as PC, Laptop, Tablets and Mobiles (Android & IOS). The website was checked on Chrome, Firefox and Edge.  It was also check by a user in Internet Explorer 7.  (see issue 3 Background Colour in the Interesting Issues, Bugs Found & Fixed section).
 
 *   The About button was tested to ensure it changed colour on hover and that it functioned on click to open the How to Play Modal Box.
 
@@ -87,7 +87,7 @@ HTML, CSS, JavaScript
 
 *   The Score indicator was tested to ensure that on each correct hit / click of a mole it increased by 1.  This was checked to ensure it changed colour and displayed the correct final score when the game time was up.  Also, tested was that on Play Again, the Score reset back to 0.
 
-*   The moles were checked that they were not visible before the Play / Play Again button was clicked.  Testing that moles appeared from a random hole for a random time before disappearing.  Also, the moles were checked that they responded when clicked and that the image of the mole changed on a successful hit.  After successful hit image was triggered, it was checked that when the moles reappeared the original mole image could be seen.  By clicking on other parts of the page such as the holes or background it was tested that this did not respond as a mole hit and only the mole image itself being clicked was a succeful hit on click.
+*   The moles were checked that they were not visible before the Play / Play Again button was clicked.  Testing, (e.g. using console.log) that moles appeared from a random hole for a random time before disappearing.  Also, the moles were checked that they responded when clicked and that the image of the mole changed on a successful hit.  After successful hit image was triggered, it was checked that when the moles reappeared the original mole image could be seen.  By clicking on other parts of the page such as the holes or background it was tested that this did not respond as a mole hit and only the mole image itself being clicked was a succeful hit on click.
 
 *   For Desktop the cursor image was checked that the mallet image only appeared around the hole and mole section of the game and turned back into a regular arrow image on the other sections of the page.  The coordinates at which the pointer clicked was checked that it was in line visually with the flat part of the mallet image.
 
@@ -95,7 +95,7 @@ HTML, CSS, JavaScript
 
 *   The README.md was proof-read and all links were checked before final submission.
 
-### Interesting Issues, Bugs Found & Fixed
+### Interesting Issues Bugs Found & Fixed
 
 **Clicking on Mole Bug**
 
@@ -114,11 +114,8 @@ Three issues arose while trying to impliment addEventListener to the moles.  Thi
 
 * The Play button was disabled during game play to fix this error, however, the Peek Function was placed in the game twice to keep this very nice effect.  Any more than running Peek twice at any one time, however, just made all the moles pop up almost at the same time constantly.
 
-**Internet Explorer 7 Background Colour**
-*   An issue arose for one user who chose to play the game on a PC that had Internet Explorer 7.  Game functionality worked as expected and all styling showed except for 1 section that used rgba for a colour choice.  The Time Left, Score and How to Play content all used this rgba gray colour and they did not display at all.  There was the option to insert a fallback colour as suggested by this [CSS Tricks article](https://css-tricks.com/ie-background-rgb-bug/), however, as hex values were already being used throughout, it was decided just to change this to hex instead as a fix. (
-    
-(Click [here](#testing) to go back to the start of Testing Section if needed).
-
+**Background Colour**
+*   An issue arose for one user who chose to play the game on a PC that had Internet Explorer 7.  Game functionality worked as expected and all styling showed except for 1 section that used rgba for a colour choice.  The Time Left, Score and How to Play content all used this rgba gray colour and they did not display at all.  There was the option to insert a fallback colour as suggested by this [CSS Tricks article](https://css-tricks.com/ie-background-rgb-bug/), however, as hex values were already being used throughout, it was decided just to change this to hex instead as a fix.
 
 ### Validator Testing
 
@@ -234,6 +231,9 @@ The Images were chosen from the following and edited in MS Paint3D:
 This site was made possible due to the help, advice and support of my Code Institue Tutor Kasia, my Mentor Daisy and all the lovely people on the Code Institue Slack community.
 
 ## Continued Professional Development
+During the design phase of this project, ideas were sketched out with paper and pencil.  My goal is to learn how to use Balsamiq WireFrames in order to implement this as a method of designing future projects.
+
+I would like to learn more about scoping and practice avoiding creating global variables.  While I was mindful of avoiding this during the project development I still feel I need more practice. 
 
 
 
