@@ -7,7 +7,7 @@
 ![Whack-A-Mole - Am I Responsive](assets/images/responsive-screenshots.png)
 
 # **User Experience (UX)**
-**User Stories**
+### User Stories
 
 
 A user also wants to:
@@ -29,13 +29,13 @@ View the website clearly across different devices.
 
 The design of the site was inspired by researching other online games to discover what aspects of their design made a positive user experience. The sites were accessed across several devices to understand what layout and features worked best on each device and had a positive impact on the user.
 
-**Design Research**
+### Design Research
 
-**Design Drawings**
+### Design Drawings
 
-**Fonts**
+### Fonts
 
-**Colour Scheme**
+### Colour Scheme
 
 ## Features
 1. **Favicon**
@@ -61,19 +61,18 @@ The design of the site was inspired by researching other online games to discove
 
     ![Page Not Found Screenshot](assets/images/404-screenshot.png)
 
-**Features Left to Implement**
+### Features Left to Implement
 
-**Limitations**
+### Limitations
 
 ## Languages Used
 
 HTML, CSS, JavaScript
----
 
 ## Testing
-Testing
+Testingmmmmmmm
 
-## **Interesting Issues, Bugs Found & Fixed**
+### **Interesting Issues, Bugs Found & Fixed**
 
 **1. Clicking on Mole Bug**
 
@@ -92,25 +91,24 @@ Three issues arose while trying to impliment addEventListener to the moles.  Thi
 
 * The Play button was disabled during game play to fix this error, however, the Peek Function was placed in the game twice to keep this very nice effect.  Any more than running Peek twice at any one time, however, just made all the moles pop up almost at the same time constantly.
 
-**Bugs Found & Not Fixed**
 
-To Do List:
+### Validator Testing
 
-Can double click on mole if quick enough to add more points to score.  Need to disable click and enable again for noext mole.  Fix - look to how I disabled the play button and apply code with a time interval added on.
-
-* Validator Testing
+Before testing, code was checked and formatted by right clicking and choosing - format document.
 
 1. The [W3C](https://validator.w3.org/) site was used to validate the **HTML** code.
 
+    It returned 5 errors on the index.html page all stating that the break tag cannot be used within a list.  The break points used were removed and to add spacing the list items were targeted in CSS with padding instead.  The validator was rerun and came back clear.  
 
-![HTML Validator Results](assets/images/html-validator-screenshot.png)
 
-2. The [W3C](https://validator.w3.org/) site was also used to validate the **CSS** code.
+2. The [W3C](https://jigsaw.w3.org/css-validator/) site was also used to validate the **CSS** code.  It returned no errors on the style.css file.
 
 
     ![CSS Validator Results](assets/images/css-validator-screenshot.png)
 
-3. **Lighthouse** was accessed through Developer Tools in Chrome to check the site for performance, acessibility, best practice and SEO.   
+3. Jshint? 
+
+4. **Lighthouse** was accessed through Developer Tools in Chrome to check the site for performance, acessibility, best practice and SEO.   
 
 ![Lighthouse Results](assets/images/lighthouse-screenshot.png)
 
