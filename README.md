@@ -2,6 +2,7 @@
 
 [View the live project here](https://ciaraosull.github.io/project-2-whack-a-mole/index.html)
 
+Whack-A-Mole is an arcade game from the 1970's where a player used a mallet to hit the moles as the randomly popped out of holes, to score points.  This game was chosen as it seems to appeal to the target audience of children aged 4-8 years old because the instructions on game play are not overly complicated, the game play time can be short to hold focus and interest and the game could be designed in a way to be bright, cheerful, funny and interactive to the target audience.  As children aged 4-8 years are at entry level reading, this game does not require lots of reading to interact and play.  This game is contained on one page so it is easliy accessible and allows the target audience to interact immediately without having to follow any instructions or navigate their way through different pages to access the game play.  The main reason why this game was chosen is that there is potential for this game to be developed further to act as a fun, interactive Reading and Maths game for children aged 4-8 years, which is explained below in the Features Left to Impliment Section.
 
 
 ![Whack-A-Mole - Am I Responsive](assets/images/responsive-screenshots.png)
@@ -9,21 +10,25 @@
 # **User Experience (UX)**
 ### User Stories
 
+Target Audience - Children Aged 4-8 Years
 
-A user also wants to:
+As a User I want to:
+*    play the game clearly across different devices
+*   play the game instantly and not have to type in anything that invloves spelling or tyring to read to navigate around different sections or pages
+*   understand how to play the game with not much reading or instructions involved
+*   play a game that does not take a long time to complete
+*   know how much time I have left to play and when time is up
+*   know what score I achieved
+*   know when exactly I have scored
+*   have fun and see interesting, funny and engaging characters that are appropriate for my age
+*   have the choice to easily play again
 
-Easily understand the main purpose of the site
-Be able to navigate easily throughout the site
-Understand the information presented in clear, jargon free language
-Use the practice audio session and have control over when it plays and pausing
-Be able to contact the organisation or the author of the site
-Be able to find the link to download the organisations app
-View the website clearly across different devices.
-
-
-**User Experience Research**
 
 **User Experience in this Site**
+
+The following takes each of the above points in the user stories and explains why the different features where designed and implimented to create a positive user experience.
+
+
 
 # **Design**
 
