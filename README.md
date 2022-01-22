@@ -55,6 +55,8 @@ The design of the site was inspired by researching other online games to discove
 
 *   This button was left enabled throughout the game play in case a user needs to check the instructions during game play time.
 
+    ![About Button](assets/images/about-button-screenshot.png)
+
 **How to Play Modal Box**
 
 *   On click of the About Button a Modal Box opens with instructions on how to play.  The font style was kept consistant within this box to the font and colours used on the main game page.  The background is darken to cover the game play area slightly but not fully.  
@@ -64,6 +66,8 @@ The design of the site was inspired by researching other online games to discove
 *   The X to close the How to Play box changes colour on hover to give feedback to the user it is interactive.  It is located in the top right of the box where it is typically found accoss most sites.  
 
 *   An added feature of the box closing when the user clicks anywhere outside it was inplimented to make it easy for users who do not notice the X or do not understand to click it to close.  This gives the user more than one open in trying to close the box to continue to game play.
+
+![How To Play Box](assets/images/about-modal-box-screenshot.png)
 
 
 4. **Favicon**
