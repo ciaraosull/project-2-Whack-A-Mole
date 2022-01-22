@@ -101,7 +101,10 @@ The design of the site was inspired by researching other online games to discove
 
      ![Final Score](assets/images/final-score-screenshot.png)
 
-6. **Moles & Holes**
+6. **Backdrop, Moles & Holes**
+
+*   A cartoon garden with tress and hill was chosen for the backdrop on full screen.  The colours are bright and simple and blend well with the cartoon moles and holes.  This is to create a fun backdrop setting to the game for the user.
+
 *   There are 6 cartoon muck mounds that resemble the holes on the game area.  They are placed on the second half of the screen to keep them separate from the other information so it is an easy and fun looking layout for the user to interact with.
 
 *   As the game starts, cartoon moles pop out of random holes at random times.  This is to make it interesting for the user as there is no predicability to when and were the moles pop up.
@@ -111,7 +114,6 @@ The design of the site was inspired by researching other online games to discove
     ![Moles](assets/images/moles-screenshot.png)
 
     ![Moles Hit](assets/images/mole-hit-screenshot.png)
-
 
 7. **Favicon**
 
@@ -129,9 +131,23 @@ The design of the site was inspired by researching other online games to discove
 
     ![Page Not Found Screenshot](assets/images/404-screenshot.png)
 
-### Features Left to Implement
+### Features Left to Implement/ Future Development
 
-### Limitations
+If time permitted this game could be enhanced by the following:
+
+*   Displaying a high score board where the user can enter their name and save their scores to the local drive to keep track.
+
+*   Other levels could be added to increase difficulty.  Ideas such as adding in extra holes and moles would increase the difficulty for a next level.  As the Javascript code uses the hole's lenght to calculate the random time and hole the mole pops out of, only the HTML and CSS would need to be altered to implement this.  Also, and increase in spped could be implimented as the levels increased in difficulty.
+
+*   Audio added to the game, such as upbeat music and noises on successful hit of the moles.  There would also have to be the option on the screen to control the sound.  It would be set to silent and it would be the users choice then to activate the sound and control the volume.  Not only would this add extra fun and interactivity but this would also increase the difficulty level and it would present extra stimlui and create a distraction.
+
+*   On successful click of mole the ("up") class could be removed.  This would prevent the slight chance that a user is quick enough to double click on a mole and increase their score by 2 points.  However, this does increase the difficulty level and so was not implemented this time around.
+
+The future development of this game could see it as being used for educational purposes for the target audience:
+
+*  This game has the potential to be expanded out to include other levels.  Once the user was comfortable with hitting mles the next level could include Math Problems, where the user would have to click on a mole that pops up holding the correct answer to score a point.  Other moles holding incorrect answers, even on successful hit, would not score points.  
+
+*   As with the Math Level, another level could see a Letter displayed on top of the game area.  The moles would then pop out holding pictures of images.  Only moles hit who are holding images that begin with that letter would score the user a point, whereas moles holding images that begin with other letters would score no points, even on a successful hit.
 
 ## Languages Used
 
