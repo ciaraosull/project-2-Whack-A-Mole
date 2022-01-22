@@ -149,6 +149,10 @@ The future development of this game could see it as being used for educational p
 
 *   As with the Math Level, another level could see a Letter displayed on top of the game area.  The moles would then pop out holding pictures of images.  Only moles hit who are holding images that begin with that letter would score the user a point, whereas moles holding images that begin with other letters would score no points, even on a successful hit.
 
+*   Again, to expand the above idea further as an educational game, the user could be given the option of imutting in their age at the begining and that then would determine the difficulty level of the Maths Problems or Letter/ Sound choices levels.
+
+*   The abouve ideas could be easily incorporated into the HTLM, CSS and JS that is already designed for this project
+
 ## Languages Used
 
 HTML, CSS, JavaScript
