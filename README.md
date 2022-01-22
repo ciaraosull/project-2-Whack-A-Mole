@@ -77,9 +77,19 @@ The design of the site was inspired by researching other online games to discove
 
 *   As soon as the time is up this Play Button then shows Play Again so the user can easily have another turn.
 
+    ![Play Button](assets/images/play-button-screenshot.png)
+     
+    ![Play Again Button](assets/images/play-again-button-screenshot.png)
 
+5. **Timer**
 
+*   The timer is displayed as Time Left at the start of the game.  It counts down from 20 to 0 displaying each number to inform the user of how much time is left of game play.  This was given a grey background colour with contrasting white text to help it stand out for the user to read easily.
 
+*   When the time is up, this section then displays Time Up and the background colour changes to red to alert the user that the game play is over.
+
+    ![Time Left Indicator](assets/images/time-left-screenshot.png)
+
+    ![Time Up](assets/images/time-up-screenshot.png)
 
 
 4. **Favicon**
