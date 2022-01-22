@@ -2,7 +2,13 @@
 
 [View the live project here](https://ciaraosull.github.io/project-2-whack-a-mole/index.html)
 
-Whack-A-Mole is an arcade game from the 1970's where a player used a mallet to hit the moles as the randomly popped out of holes, to score points.  This game was chosen as it seems to appeal to the target audience of children aged 4-8 years old because the instructions on game play are not overly complicated, the game play time can be short to hold focus and interest and the game could be designed in a way to be bright, cheerful, funny and interactive to the target audience.  As children aged 4-8 years are at entry level reading, this game does not require lots of reading to interact and play.  This game is contained on one page so it is easliy accessible and allows the target audience to interact immediately without having to follow any instructions or navigate their way through different pages to access the game play.  The main reason why this game was chosen is that there is potential for this game to be developed further to act as a fun, interactive Reading and Maths game for children aged 4-8 years, which is explained below in the Features Left to Impliment Section.
+Whack-A-Mole is an arcade game from the 1970's where a player used a mallet to hit the moles as the randomly popped out of holes, to score points.  
+
+This game was chosen as it seems to appeal to the target audience of children aged 4-8 years old because the instructions on game play are not overly complicated, the game play time can be short to hold focus and interest and the game could be designed in a way to be bright, cheerful, funny and interactive to the target audience.  
+
+As children aged 4-8 years are at entry level reading, this game does not require lots of reading to interact and play.  This game is contained on one page so it is easliy accessible and allows the target audience to interact immediately without having to follow any instructions or navigate their way through different pages to access the game play.  
+
+The main reason why this game was chosen is that there is potential for this game to be developed further to act as a fun, interactive Reading and Maths game for children aged 4-8 years, which is explained below in the Features Left to Impliment Section.
 
 
 ![Whack-A-Mole - Am I Responsive](assets/images/responsive-screenshots.png)
@@ -35,11 +41,31 @@ The design of the site was inspired by researching other online games to discove
 
 ### Design Research
 
+Some research into fun design ideas for games for kids were:
+
+*   [Whack-A-Mole](https://www.memory-improvement-tips.com/whack-a-mole-game.html)
+
+*   [Whack-A-Mole by Crazy Games](https://www.crazygames.com/game/whack-a-mole)
+
+*   [CBC Kids](https://www.cbc.ca/kids/games)
+
+
 ### Design Drawings
+
+Basic drawings at the beginning gave a draft design that changed over time. Mobile first and creating a simple, bright easy to use game for eliciting positive user experience were the main factors that influenced the design layout as the game design progressed.
 
 ### Fonts
 
+The fonts used are:
+1.  Bubblegum Sans for the Title & How to Play Heading.  This was chosen for its clear lettering and spacing for reading accessibility for the user.  It seems fun and quirky too.
+
+2.  Roboto Mono for the Time Left & Scoreboard.  Again, chosen was for its clear lettering and spacing for reading accessibility for the user.  It has a sort of old arcade game lettering style to it, which is fitting for a game that dates back to the 1970’s.
+
+The fonts were imported from [Google Fonts](https://fonts.google.com/) with backups used in case the fonts do not load for the user.
+
 ### Colour Scheme
+
+The colour scheme was chosen by using [Coolors](https://coolors.co/). The following palette was chosen for using on the fonts and general background throughout the site due to high contrast for user reading accessibility and also to give a bright and cheerful feeling.
 
 ## Features
 
@@ -162,6 +188,8 @@ HTML, CSS, JavaScript
 *   Methods such as testing by clicking, hovering and Chrome Developer Tools during this project's development were used to test for bugs in the HTML, CSS and JS code.  The Elements section was used for the HTML & CSS.  The Console was used to check the JS.  Any errors or warnings were fixed as they appeared.  Use of console.log() and for click events, alert(), were used as the code was written helped check everything was behaving as expected and functions such as random whole numbers or random holes were being generated correctly.  
 
 *   After each function was written it was tested using these methods mentioned above before moving on.  This helped keep tracking down issues and bugs to a minimum.
+
+    ![JS Testing Function in Console](assets/images/js-random-hole-screenshot.png)
 
 *   After deployment all features were checked on laptop, mobile (Samsung Galaxy & iPhone 8). The site was sent to peers to check from their devices that all features functioned correctly and feedback on responsiveness and functionality was positive across all devices checked such as PC, Laptop, Tablets and Mobiles (Android & IOS). The website was checked on Chrome, Firefox and Edge.  It was also check by a user in Internet Explorer 7.  (see issue 3 Background Colour in the Interesting Issues, Bugs Found & Fixed section).
 
