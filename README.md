@@ -67,6 +67,9 @@ The fonts were imported from [Google Fonts](https://fonts.google.com/) with back
 
 The colour scheme was chosen by using [Coolors](https://coolors.co/). The following palette was chosen for using on the fonts and general background throughout the site due to high contrast for user reading accessibility and also to give a bright and cheerful feeling.
 
+
+![Colour Pallet](assets/images/colour-pallet-screenshot.png)
+
 ## Features
 
 1. **About Button**
