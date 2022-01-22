@@ -43,9 +43,7 @@ The design of the site was inspired by researching other online games to discove
 
 ## Features
 
-1. **Game Information Section**
-
-**About Botton**
+1. **About Button**
 
 *   As this game was designed to be on one page it was decided to use an About Button for the user to interact with if they need to understand how to play the game.  
 
@@ -57,7 +55,7 @@ The design of the site was inspired by researching other online games to discove
 
     ![About Button](assets/images/about-button-screenshot.png)
 
-**How to Play Modal Box**
+2. **How to Play Modal Box**
 
 *   On click of the About Button a Modal Box opens with instructions on how to play.  The font style was kept consistant within this box to the font and colours used on the main game page.  The background is darken to cover the game play area slightly but not fully.  
 
@@ -68,6 +66,20 @@ The design of the site was inspired by researching other online games to discove
 *   An added feature of the box closing when the user clicks anywhere outside it was inplimented to make it easy for users who do not notice the X or do not understand to click it to close.  This gives the user more than one open in trying to close the box to continue to game play.
 
 ![How To Play Box](assets/images/about-modal-box-screenshot.png)
+
+3. **Play Button**
+
+*   This button is located at the very top of the page and changes colour on hover to give feedback to the user that it is interactive.
+
+*   A Font Awesome Icon was used to help those users who cannot read yet understand what this buttons function is.  The word Play was used as it is short and not too long to read.
+
+*   Javascript was also used to diable this button during game play so the user does not click on it while the function is running causing it to run too many times simultaniously and all the moles popping up at the same time.  The button is enable again when the time runs out.
+
+*   As soon as the time is up this Play Button then shows Play Again so the user can easily have another turn.
+
+
+
+
 
 
 4. **Favicon**
