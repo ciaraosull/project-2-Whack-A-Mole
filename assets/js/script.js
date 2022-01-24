@@ -19,21 +19,25 @@ document.addEventListener("DOMContentLoaded", function () {
     const infoBox = document.getElementById("infoModalBox");
     const infoButton = document.getElementById("game-instructions");
     const closeSpan = document.getElementsByClassName("close")[0];
+    const audioControls = document.getElementById("audio-controls");
 
-    // When the user clicks the About Button, open the info box
+    // When the user clicks the About Button, open the info box & set audio back to start
     infoButton.onclick = function () {
         infoBox.style.display = "block";
+        audioControls.currentTime = 0;
     };
 
-    // When the user clicks on (x), close the info box
+    // When the user clicks on (x), close the info box and audio
     closeSpan.onclick = function () {
         infoBox.style.display = "none";
+        audioControls.pause();
     };
 
-    // When the user clicks anywhere outside of the info box, close it too
+    // When the user clicks anywhere outside of the info box, close it & audio too
     window.onclick = function (event) {
         if (event.target === infoBox) {
             infoBox.style.display = "none";
+            audioControls.pause();
         }
     };
 });
