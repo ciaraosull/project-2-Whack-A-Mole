@@ -6,7 +6,7 @@ Whack-A-Mole is an arcade game from the 1970's where a player used a mallet to h
 
 This game was chosen as it seems to appeal to the target audience of children aged 4-8 years old because the instructions on game play are not overly complicated, the game play time can be short to hold focus and interest and the game could be designed in a way to be bright, cheerful, funny and interactive to the target audience.  
 
-As children aged 4-8 years are at entry level reading, this game does not require lots of reading to interact and play.  This game is contained on one page so it is easliy accessible and allows the target audience to interact immediately without having to follow any instructions or navigate their way through different pages to access the game play.  
+As children aged 4-8 years are at entry level reading, this game does not require lots of reading to interact and play.  This game includes an audio file that reads out the instruction on screen to help the user understand if they cannot read yet.  This game is contained on one page so it is easliy accessible and allows the target audience to interact immediately without having to follow any instructions or navigate their way through different pages to access the game play.  
 
 The main reason why this game was chosen is that there is potential for this game to be developed further to act as a fun, interactive Reading and Maths game for children aged 4-8 years, which is explained below in the Features Left to Impliment Section.
 
@@ -88,7 +88,7 @@ The colour scheme was chosen by using [Coolors](https://coolors.co/). The follow
 
 *   On click of the About Button a Modal Box opens with instructions on how to play.  The font style was kept consistant within this box to the font and colours used on the main game page.  The background is darken to cover the game play area slightly but not fully.  
 
-*   The instructions are kept minimula and in easy to use language for children.  It is thought that an adult will read these to the users that cannot read yet.  However, as this is a popular and simple game to play the user can still have a try at playing without having to read the instructions.
+*   The instructions are kept minimum and in easy to use language for children.  As the target audience may not be able to read fully yet, an audio file was placed in this box at the start.  The user has control over the file and if played it will read down through the instructions for the user.  If the user closes the box before stopping the audio, the Javascript ensure s the audio file will close automatically for the user and reset it back to the start if the box is opened again.
 
 *   The X to close the How to Play box changes colour on hover to give feedback to the user it is interactive.  It is located in the top right of the box where it is typically found accoss most sites.  
 
@@ -206,6 +206,8 @@ HTML, CSS, JavaScript
 *   The About button was tested to ensure it changed colour on hover and that it functioned on click to open the How to Play Modal Box.
 
 *   The How to Play Modal Box was also tested.  The X to close in the righthand corner changed colour when hovered over and also closed the box when clicked.  Also, tested was if a user clicked anywhere outside the box, this would also close it.  This box was tested to ensure that it opened during game play incase the user needs to check the instructions after the game starts.  All this functioned as expected.
+
+*   The Audio controls were tested by opening the How to Play Box and ensuring it did not start without the user initiating it.  Also, the Javascript was tested to ensure that if a user closed the Box before stopping the audio, that the audio would pause on close (from pressing X or tapping outside the box).  The Audio was checked that it was reset back to the start each time the About button was clicked.
 
 *   The Play button was tested to ensure it changed colour on hover and that it functioned on click to start the game.  It was tested to check it was disabled during game play but enabled and changed to Play Again once the game play was over.
 
