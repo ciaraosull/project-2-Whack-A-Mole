@@ -51,7 +51,7 @@ Some research into fun design ideas for games for kids were:
 
 Basic drawings at the beginning gave a draft design that changed over time. Mobile first and creating a simple, bright easy to use game for eliciting positive user experience were the main factors that influenced the design layout as the game design progressed.
 
-Sketches were then narrowed down and placed in Balsamiq Wireframes as a final draft to work from.
+Sketches were then narrowed down and placed in Balsamiq Wireframes as a final draft to work from.  The Desktop and Tablet version of the game were designed to match the mobile version, just by using media queries to expand out, so no differences in design.
 
 ![Wireframes](assets/images/wireframes-whack-a-mole.png)
 
