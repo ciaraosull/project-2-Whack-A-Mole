@@ -210,11 +210,13 @@ HTML, CSS, JavaScript
 
 *   The Audio controls were tested by opening the How to Play Box and ensuring it did not start without the user initiating it.  Also, the JavaScript was tested to ensure that if a user closed the Box before stopping the audio, that the audio would pause on close (from pressing X or tapping outside the box).  The Audio was checked that it was reset back to the start each time the About button was clicked.
 
+*   The audio file was checked also to ensure it was of clear quality and that it matched the written instructions exactly.
+
 *   The Play button was tested to ensure it changed colour on hover and that it functioned on click to start the game.  It was tested to check it was disabled during game play but enabled and changed to Play Again once the game play was over.
 
 *   The Time Left indicator was checked that it started at 20 before game started and that it counted down to 0 before game was over.  Also checked was that the Time Left indicator changed to Time Up when it reached 0 and the background changed colour.  If Play Again was chosen by the user, it was checked that Time Left Indicator displayed again and functioned accordingly.
 
-*   The Score indicator was tested to ensure that on each correct hit / click of a mole it increased by 1.  This was checked to ensure it changed colour and displayed the correct final score when the game time was up.  Also, tested was that on Play Again, the Score reset back to 0.
+*   The Score indicator was tested to ensure that on each correct hit / one click of a mole it increased by 1.  This was checked to ensure it changed colour and displayed the correct final score when the game time was up.  Also, tested was that on Play Again, the Score reset back to 0.
 
 *   The moles were checked that they were not visible before the Play / Play Again button was clicked.  Testing, (e.g., using console.log) that moles appeared from a random hole for a random time before disappearing.  Also, the moles were checked that they responded when clicked and that the image of the mole changed on a successful hit.  After successful hit image was triggered, it was checked that when the moles reappeared the original mole image could be seen.  By clicking on other parts of the page such as the holes or background it was tested that this did not respond as a mole hit and only the mole image itself being clicked was a successful hit on click.
 
@@ -296,7 +298,7 @@ The site was deployed to GitHub pages. The steps to deploy are as follows:
 
 The live link is: https://ciaraosull.github.io/project-2-whack-a-mole/index.html
 
-* Visual Studio (VS) Code was the Integrated Development Environment used to develop this ebsite.
+* GitPod was the Integrated Development Environment used to develop this ebsite.
 
 ### Version Control
 * Git was used as the version control software.  Commands such as git add ., git status, git commit and git push were used to add, save, stage and push the code to the GitHub repository where the source code is stored.
