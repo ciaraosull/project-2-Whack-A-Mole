@@ -100,11 +100,11 @@ function playGame() {
 /**
  * function game timer countdown
  */
-function timeLeft(i) {
+function timeLeft(seconds) {
     let countDown = setInterval(function () { //created a variable called countDown and take 1 away each time until 0
-        document.getElementById("timer").innerHTML = i; //access the timer html text to display the number counting down
-        i--;
-        if (i === -1) {
+        document.getElementById("timer").innerHTML = seconds; //access the timer html text to display the number counting down
+        seconds--;
+        if (seconds === -1) {
             clearInterval(countDown); //if statement for what to do when timer gets to 0 and game is over
             document.getElementById("time-up-alert").style.display = "block"; //hide time-up message on game start & play again
             document.getElementById("time-left").style.display = "none"; //show countdown timer on game start & play again
