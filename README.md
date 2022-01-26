@@ -188,7 +188,9 @@ The future development of this game could see it as being used for educational p
 
 *   Again, to expand the above idea further as an educational game, the user could be given the option of imputing in their age at the beginning and that then would determine the difficulty level of the Maths Problems or Letter/ Sound choices levels.
 
-*   The above ideas could be easily incorporated into the HTLM, CSS and JS that is already designed for this project
+*   The above ideas could be easily incorporated into the HTLM, CSS and JS that is already designed for this project.
+
+*   **Just to Note:** although the target audience for this project was children aged 4-8years of age, there is great potential for the target audience to be expanded on.  Interesting [research](https://ottawacitizen.com/news/local-news/memory) on the benefits of Whack-A-Mole on people who live with Dementia has shown further development of this project could also proove to be beneficial to this type of audience.  Also, [research](https://eudl.eu/doi/10.4108/eai.18-7-2017.152895) into Whack-A-Mole's attention training properties can be looked at to further expand on this project to support those perhaps who have sustained an Aquired Brain Injury and their rehabilitation journey.
 
 ## Languages Used
 
