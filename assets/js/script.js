@@ -66,16 +66,16 @@ function randomTimeBetweenPeek(min, max) {
  * into hole
  */
 function peek() {
-    let randTime = randomTimeBetweenPeek(500, 2000); //use the random time from above & set between .5-1.5 secs
+    let randTime = randomTimeBetweenPeek(500, 2000);
     let randHole = randomHole(hole);
     randHole.classList.add("up"); //take the randHole variable and assign it the class "up" to show moles when peek() is run  
     setTimeout(function () {
         randHole.classList.remove("up"); //to remove the class "up" after the random time generated has passed
         if (gameOver === false) { //when timer is running (while gameOver is false) to keep running peek
-            peek(); //to keep moles popping up and down until time is over
+            peek();
             document.getElementById("playButton").disabled = true; //to disable play button once game starts to avoid user clicking and setting off peek() multiple times
         }
-    }, randTime); //time between moles peeking is random (as above)
+    }, randTime);
 }
 
 /**
@@ -101,17 +101,17 @@ function playGame() {
  * function game timer countdown
  */
 function timeLeft(seconds) {
-    let countDown = setInterval(function () { //created a variable called countDown and take 1 away each time until 0
+    let countDown = setInterval(function () {
         document.getElementById("timer").innerHTML = seconds; //access the timer html text to display the number counting down
         seconds--;
         if (seconds === -1) {
             clearInterval(countDown); //if statement for what to do when timer gets to 0 and game is over
-            document.getElementById("time-up-alert").style.display = "block"; //hide time-up message on game start & play again
-            document.getElementById("time-left").style.display = "none"; //show countdown timer on game start & play again
-            document.getElementById("playButton-text").innerHTML = "Play Again"; //change the Play button text to play again
+            document.getElementById("time-up-alert").style.display = "block"; 
+            document.getElementById("time-left").style.display = "none";
+            document.getElementById("playButton-text").innerHTML = "Play Again";
             document.getElementById("scoreboard").style.backgroundColor = "red";
         }
-    }, 1000); //counts down the number 1 second in the setInterval for countDown variable
+    }, 1000);
 }
 
 /**
@@ -119,7 +119,7 @@ function timeLeft(seconds) {
  * add click event to increase score 
  * & change background image on hit
  */
-moles.forEach(mole => { //use querySelectAll to iterate through the moles and add a click event to each
+moles.forEach(mole => {
     mole.addEventListener("click", function () {
 
         score++; //increase the score on every mole click
